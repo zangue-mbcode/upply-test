@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
 const FormScheme = z.object({
   email: z.string().min(1).max(50).email()
@@ -45,6 +46,7 @@ export const ForgotPasswordForm = ({ onSubmit }: ForgotPasswordFormProps) => {
       className="space-y-4"
       form={form}
       onSubmit={async (values) => {
+        setIsLoading(true)
         const url = await onSubmit(values);
 
         if (url) {
@@ -71,7 +73,10 @@ export const ForgotPasswordForm = ({ onSubmit }: ForgotPasswordFormProps) => {
      
 
       <div className="grid gap-2">
-        <Button type="submit">Forgot Password</Button>
+        <Button type="submit">
+      {isLoading && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}Forgot Password</Button>
       </div>
     </Form>
   )

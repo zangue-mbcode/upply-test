@@ -16,10 +16,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
 const FormScheme = z.object({
-  confirm_password: z.string().min(1).max(50),
-  password: z.string().min(1).max(50)
+  confirm_password: z.string().min(6).max(50),
+  password: z.string().min(6).max(50)
 })
 .refine((obj) => obj.password === obj.confirm_password, {
   path: ["confirm_password"],
@@ -51,6 +52,7 @@ export const ChangePasswordForm = ({ onSubmit }: ChangePasswordFormProps) => {
       className="space-y-4"
       form={form}
       onSubmit={async (values) => {
+        setIsLoading(true)
         const url = await onSubmit(values);
 
         if (url) {
@@ -92,7 +94,10 @@ export const ChangePasswordForm = ({ onSubmit }: ChangePasswordFormProps) => {
      
 
       <div className="grid gap-2">
-      <Button type="submit">Change Password</Button>
+      <Button type="submit">
+      {isLoading && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}Change Password</Button>
       </div>
     </Form>
   )

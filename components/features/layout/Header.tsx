@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import {
   DropdownMenu,
@@ -15,13 +15,23 @@ import useScroll from '@/hooks/use-scroll';
 import { cn } from '@/lib/utils';
 import { LogOut, User2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { supabase } from '@/lib/supabase';
 
-const Header = () => {
+const Header = async () => {
   const scrolled = useScroll(5);
   const selectedLayout = useSelectedLayoutSegment();
   const router = useRouter();
 
-  const logout = () => {
+  
+  
+  const logout = async () => {
+    const { error } = await supabase.auth.signOut();
+
+    if (error) {
+      alert(JSON.stringify(error));
+    } else {
+      router.push('/signin');
+    }
     router.push('/')
   }
 

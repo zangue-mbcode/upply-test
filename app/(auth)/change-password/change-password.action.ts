@@ -7,5 +7,5 @@ export const changePasswordAction = async (values: ChangePasswordFormType) => {
 
  console.log("user login form", values)
 
-  return '/login';
+  return '/';
 };
