@@ -5,8 +5,8 @@ import { SideNavItem } from './SideNavItemType';
 
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
-    title: 'Home',
-    path: '/',
+    title: 'Dashboard',
+    path: '/dashboard',
     icon: <Home width="24" height="24" />,
   },
   {

@@ -2,15 +2,28 @@
 
 import React from 'react';
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
 import useScroll from '@/hooks/use-scroll';
 import { cn } from '@/lib/utils';
+import { LogOut, User2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
   const scrolled = useScroll(5);
   const selectedLayout = useSelectedLayoutSegment();
+  const router = useRouter();
+
+  const logout = () => {
+    router.push('/')
+  }
 
   return (
     <div
@@ -35,8 +48,24 @@ const Header = () => {
 
         <div className="hidden md:block">
           <div className="h-8 w-8 rounded-full bg-zinc-300 flex items-center justify-center text-center">
-          
-            <span className="font-semibold text-sm">Ul</span>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+              <span className="font-semibold text-sm cursor-pointer">Ul</span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuItem asChild>
+                  <Link href="/profile">
+                    <User2 className="mr-2 h-4 w-4" />
+                    Profile
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => logout()}>
+                  <LogOut className="mr-2 h-4 w-4" />
+                  <span>Log out</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
           </div>
         </div>
       </div>

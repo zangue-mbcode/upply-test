@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 import { Footer } from '@/components/features/layout/Footer'
-import { LayoutDashboard } from 'lucide-react'
 import SideNav from '@/components/features/layout/Sidebar'
 import MarginWidthWrapper from '@/components/features/layout/Margin-width-wrapper'
 import HeaderMobile from '@/components/features/layout/Header-mobile'
@@ -23,9 +21,7 @@ export default function RootLayout({
 }) {
   
   return (
-    <html lang="en">
-      <body className={`bg-white${inter.className}`}>
-        <div className="flex">
+    <div className="flex">
           <SideNav />
           <main className="flex-1">
             <MarginWidthWrapper>
@@ -36,7 +32,5 @@ export default function RootLayout({
             </MarginWidthWrapper>
           </main>
         </div>
-      </body>
-    </html>
   )
 }

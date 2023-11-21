@@ -1,13 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Footer } from '@/components/features/layout/Footer'
-import { LayoutDashboard } from 'lucide-react'
-import SideNav from '@/components/features/layout/Sidebar'
-import MarginWidthWrapper from '@/components/features/layout/Margin-width-wrapper'
-import HeaderMobile from '@/components/features/layout/Header-mobile'
-import PageWrapper from '@/components/features/layout/Page-wrapper'
-import Header from '@/components/features/layout/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,15 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-white${inter.className}`}>
-        <div className="flex">
-          <SideNav />
-          <main className="flex-1">
-            <MarginWidthWrapper>
-              <Header />
-              <HeaderMobile />
-              <PageWrapper>{children}</PageWrapper>
-              <Footer />
-            </MarginWidthWrapper>
+        <div >
+          <main >
+            {children}
           </main>
         </div>
       </body>
