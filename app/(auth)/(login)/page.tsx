@@ -3,7 +3,6 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
-import { loginAction } from "./login.action"
 import { UserLoginForm } from "./login-form"
 
 export const metadata: Metadata = {
@@ -43,7 +42,7 @@ export default function AuthenticationPage() {
                 Enter your credentials below to login
               </p>
             </div>
-            <UserLoginForm  onSubmit={loginAction}/>
+            <UserLoginForm />
             <p className="px-8 text-center text-sm text-muted-foreground">
               <Link
                 href="/forgot-password"

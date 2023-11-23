@@ -17,6 +17,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
+import { useUserStore } from "@/store/UserStore";
+import { useToast } from "@/components/ui/use-toast";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { supabase } from "@/lib/supabase";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const FormScheme = z.object({
   email: z.string().min(1).max(50).email(),
@@ -25,14 +30,13 @@ const FormScheme = z.object({
 
 export type LoginFormType = z.infer<typeof FormScheme>;
 
-type LoginFormProps = {
-  onSubmit: (values: LoginFormType) => Promise<string | void>;
-};
 
 
-export const UserLoginForm = ({ onSubmit }: LoginFormProps) => {
+export const UserLoginForm = () => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
   const router = useRouter();
+  const { user, setUser } = useUserStore();
+  const { toast } = useToast();
 
   const form = useZodForm({
     schema: FormScheme,
@@ -41,21 +45,36 @@ export const UserLoginForm = ({ onSubmit }: LoginFormProps) => {
       password: '',
     },
   });
+  
 
+  const onSubmit: SubmitHandler<FieldValues> = async (data, event) => {
+    event?.preventDefault();
+    
+    setIsLoading(true);
+    let { data: user, error } = await supabase.auth.signInWithPassword({
+      email: data.email,
+      password: data.password,
+    });
+
+    if (user.user) {
+      setUser(user.user);
+      console.log('user.user', user.user)
+      router.push('/dashboard')
+      router.refresh()
+    }
+    if (error) {
+      toast({
+        title: "Connexion réussie",
+      });
+    }
+    setIsLoading(false);
+  };
 
   return (
     <Form
-      className="space-y-4"
-      form={form}
-      onSubmit={async (values) => {
-        setIsLoading(true)
-        const url = await onSubmit(values);
-
-        if (url) {
-          router.push(url);
-          router.refresh();
-        }
-      }}
+    className="space-y-4"
+    form={form}
+      onSubmit={onSubmit}
     >
       <FormField
         control={form.control}

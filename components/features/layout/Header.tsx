@@ -16,14 +16,16 @@ import { cn } from '@/lib/utils';
 import { LogOut, User2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
+import { useUserStore } from '@/store/UserStore';
 
 const Header = async () => {
   const scrolled = useScroll(5);
   const selectedLayout = useSelectedLayoutSegment();
   const router = useRouter();
+  const { user, setUser } = useUserStore();
 
   
-  
+  console.log('useUserStore', user)
   const logout = async () => {
     const { error } = await supabase.auth.signOut();
 
