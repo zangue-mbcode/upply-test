@@ -4,7 +4,6 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { ForgotPasswordForm } from "./forgot-password-form"
-import { ForgotPasswordAction } from "./forgot-password.action"
 
 export const metadata: Metadata = {
   title: "Authentication",
@@ -42,7 +41,7 @@ export default function AuthenticationPage() {
               Enter your email below to create your account
               </p>
             </div>
-            <ForgotPasswordForm    onSubmit={ForgotPasswordAction}/>
+            <ForgotPasswordForm />
             
           </div>
         </div>

@@ -4,7 +4,6 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { ChangePasswordForm } from "./change-password-form"
-import { changePasswordAction } from "./change-password.action"
 
 export const metadata: Metadata = {
   title: "Authentication",
@@ -42,7 +41,7 @@ export default function AuthenticationPage() {
               Enter your email below to create your account
               </p>
             </div>
-            <ChangePasswordForm   onSubmit={changePasswordAction} />
+            <ChangePasswordForm />
             
           </div>
         </div>

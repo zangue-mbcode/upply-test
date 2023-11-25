@@ -47,24 +47,25 @@ export const UserLoginForm = () => {
   });
   
 
-  const onSubmit: SubmitHandler<FieldValues> = async (data, event) => {
+  const onSubmit: SubmitHandler<FieldValues> = async (values, event) => {
     event?.preventDefault();
     
     setIsLoading(true);
-    let { data: user, error } = await supabase.auth.signInWithPassword({
-      email: data.email,
-      password: data.password,
+    const { data: user, error } = await supabase.auth.signInWithPassword({
+      email: values.email,
+      password: values.password,
     });
 
     if (user.user) {
       setUser(user.user);
+      localStorage.setItem("UpplyTestUser", JSON.stringify(user.user))
       console.log('user.user', user.user)
       router.push('/dashboard')
       router.refresh()
     }
     if (error) {
       toast({
-        title: "Connexion réussie",
+        title: "Echec et connexion",
       });
     }
     setIsLoading(false);

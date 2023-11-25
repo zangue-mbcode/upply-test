@@ -1,5 +1,5 @@
 
-import { Folder, HelpCircle, Home, Mail, Settings } from 'lucide-react';
+import { Folder, HelpCircle, Home, Mail, Settings, User2 } from 'lucide-react';
 import { SideNavItem } from './SideNavItemType';
 
 
@@ -36,8 +36,8 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     ],
   },
   {
-    title: 'Help',
-    path: '/help',
-    icon: <HelpCircle width="24" height="24" />,
+    title: 'Profile',
+    path: '/dashboard/profile',
+    icon: <User2 width="24" height="24" />,
   },
 ];

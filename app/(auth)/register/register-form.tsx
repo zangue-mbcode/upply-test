@@ -18,6 +18,8 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import { FieldValues, SubmitHandler } from "react-hook-form";
+import { supabase } from "@/lib/supabase";
 
 const FormScheme = z.object({
   firstName: z.string(),
@@ -33,12 +35,9 @@ const FormScheme = z.object({
 
 export type RegisterFormType = z.infer<typeof FormScheme>;
 
-type RegisterFormProps = {
-  onSubmit: (values: RegisterFormType) => Promise<string | void>;
-};
 
 
-export const RegisterForm = ({ onSubmit }: RegisterFormProps) => {
+export const RegisterForm = () => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
   const router = useRouter();
   const { toast } = useToast()
@@ -54,24 +53,43 @@ export const RegisterForm = ({ onSubmit }: RegisterFormProps) => {
     },
   });
 
+  
+  const onSubmit: SubmitHandler<FieldValues> = async (values, event) => {
+    event?.preventDefault();
+    
+    setIsLoading(true);
+    const { data, error } = await supabase.auth.signUp({
+      email: values?.email,
+      password: values?.password,
+    options: {
+      data: {
+        first_name: values?.firstName,
+        last_name: values?.lastName
+      }
+    }
+    })
+
+    if (data) {
+      console.log('register user', data)
+      toast({
+        title: "Compte crée avec succèss",
+      });
+      router.push('/')
+      router.refresh()
+    }
+    if (error) {
+      toast({
+        title: "Votre compte n'a pas été crée",
+      });
+    }
+    setIsLoading(false);
+  };
 
   return (
     <Form
       className="space-y-4"
       form={form}
-      onSubmit={async (values) => {
-        setIsLoading(true)
-        const url = await onSubmit(values);
-
-        if (url) {
-          toast({
-            title: "Account Created",
-            description: "Veuillez verifier votre compte dans votre boite mail",
-          })
-          router.push(url);
-          router.refresh();
-        }
-      }}
+        onSubmit={onSubmit}
     >
       <FormField
         control={form.control}

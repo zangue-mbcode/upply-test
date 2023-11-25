@@ -17,24 +17,38 @@ import { LogOut, User2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
 import { useUserStore } from '@/store/UserStore';
+import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 
-const Header = async () => {
+const Header = () => {
   const scrolled = useScroll(5);
   const selectedLayout = useSelectedLayoutSegment();
   const router = useRouter();
   const { user, setUser } = useUserStore();
 
+  useEffect(() => {
+      if (!user) {
+        const local_user = JSON.parse(localStorage.getItem("UpplyTestUser")!)
+        if (!local_user) {
+          router.push('/')
+          router.refresh()
+        }else{
+          setUser(local_user)
+        }
+      }
+    
+      console.log('useUserStore', user)
+  }, [user]);
   
-  console.log('useUserStore', user)
+  
   const logout = async () => {
     const { error } = await supabase.auth.signOut();
 
     if (error) {
       alert(JSON.stringify(error));
     } else {
-      router.push('/signin');
+      localStorage.removeItem("UpplyTestUser")
+      router.push('/');
     }
-    router.push('/')
   }
 
   return (
@@ -62,11 +76,18 @@ const Header = async () => {
           <div className="h-8 w-8 rounded-full bg-zinc-300 flex items-center justify-center text-center">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-              <span className="font-semibold text-sm cursor-pointer">Ul</span>
+                <Avatar>
+                  {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+                  <AvatarFallback>
+                    { 
+                      user && user?.user_metadata?.first_name ? user?.user_metadata?.first_name[0]+user?.user_metadata?.last_name[0] : ""
+                    }
+                  </AvatarFallback>
+                </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
                 <DropdownMenuItem asChild>
-                  <Link href="/profile">
+                  <Link href="/dashboard/profile">
                     <User2 className="mr-2 h-4 w-4" />
                     Profile
                   </Link>
