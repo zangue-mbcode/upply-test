@@ -58,7 +58,7 @@ export const RegisterForm = () => {
     event?.preventDefault();
     
     setIsLoading(true);
-    const { data, error } = await supabase.auth.signUp({
+    const { data: user, error } = await supabase.auth.signUp({
       email: values?.email,
       password: values?.password,
     options: {
@@ -69,8 +69,8 @@ export const RegisterForm = () => {
     }
     })
 
-    if (data) {
-      console.log('register user', data)
+    if (user?.user) {
+      console.log('register user', user?.user)
       toast({
         title: "Compte crée avec succèss",
       });
