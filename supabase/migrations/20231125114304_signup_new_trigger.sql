@@ -1,5 +1,4 @@
-DROP FUNCTION IF EXISTS next_auth.uid()
-DROP SCHEMA IF EXISTS "next_auth";
+
 
 CREATE OR REPLACE FUNCTION public.create_public_user_for_singup()
  RETURNS trigger
