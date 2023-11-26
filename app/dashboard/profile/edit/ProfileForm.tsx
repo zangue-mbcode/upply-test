@@ -13,10 +13,6 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { getUserProfile } from '@/lib/db/query/user.query';
-import { useUserStore } from '@/store/UserStore';
-import { useQuery } from '@tanstack/react-query';
-// import { UserEdit } from '@/src/db/query/userProfile?.query';
 import { useRouter } from 'next/navigation';
 import { FieldValues, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';

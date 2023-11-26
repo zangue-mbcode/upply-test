@@ -13,15 +13,11 @@ import {
   useZodForm,
 } from '@/components/ui/form';
 import { useUserStore } from '@/store/UserStore';
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-// import { ContentTextArea } from '@/src/features/post/ContentTextArea';
-// import { PostWrapper } from '@/src/features/post/PostWrapper';
-// import { User } from '@prisma/client';
+import { FieldValues, SubmitHandler } from "react-hook-form";
 import { useRouter } from 'next/navigation';
 import { z } from 'zod';
 import { getUserProfile } from "@/lib/db/query/user.query";
 import { useQuery } from "@tanstack/react-query";
-import { useUserProfileStore } from "@/store/UserProfileStore";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/components/ui/use-toast";
 

@@ -2,15 +2,11 @@
 
 import * as React from "react"
 
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 import { useUserStore } from '@/store/UserStore';
-// import { ContentTextArea } from '@/src/features/post/ContentTextArea';
-// import { PostWrapper } from '@/src/features/post/PostWrapper';
-// import { User } from '@prisma/client';
 import { useRouter } from 'next/navigation';
 import { getUserProfile } from "@/lib/db/query/user.query";
 import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/lib/supabase";
 import { Post } from "@/components/features/post/Post";
 import { Profile } from "../users/[userId]/Profile";
 import Link from "next/link";
