@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import { useUserStore } from '@/store/UserStore';
 import { useRouter } from 'next/navigation';
 import { useQuery } from "@tanstack/react-query";
 import { useToast } from "@/components/ui/use-toast";
@@ -15,7 +14,6 @@ export const ReplyPost = ({postId}: any) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
   
-  const { user, setUser } = useUserStore();
   const { toast } = useToast();
 
     
@@ -26,9 +24,6 @@ export const ReplyPost = ({postId}: any) => {
 
 
   const post = data?.data?.find((post: any) => post?.id === postId);
-  console.log("data", data)
-  console.log("post", post)
-  console.log("post", post?.id)
   
   return (
     <>
