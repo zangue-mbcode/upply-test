@@ -18,10 +18,7 @@ export const ReplyPost = ({postId}: any) => {
   const { user, setUser } = useUserStore();
   const { toast } = useToast();
 
-    if (!user) {
-    throw new Error('User not found');
-  }
-
+    
   const { isPending, isError, data, error, refetch } = useQuery({
     queryKey: ["post"],
     queryFn: getPost,

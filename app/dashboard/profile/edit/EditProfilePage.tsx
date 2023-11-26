@@ -9,9 +9,7 @@ import { ProfileForm } from "./ProfileForm";
 
 export const EditProfilePage = () => {
   const { user, setUser } = useUserStore();
-  if (!user) {
-    throw new Error('User not found');
-  }
+  
   const { isPending, isError, data, error, refetch } = useQuery({
     queryKey: ["profile"],
     queryFn: getUserProfile,
