@@ -1,6 +1,7 @@
 // import { PostHome } from '@/src/db/query/post.query';
 import { MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import { DeleteButton } from './DeleteButton';
 import { LikeButton } from './LikeButton';
 import { PostWrapper } from './PostWrapper';
 
@@ -24,6 +25,8 @@ export const Post = ({ post }: PostProps) => {
         >
           <MessageCircle size={20} />
         </Link>
+
+        <DeleteButton post={post} />
       </div>
       <div>
         {/* <Link className="text-muted-foreground text-sm" href={`/posts/${post.id}`}>

@@ -37,7 +37,7 @@ export const Profile = ({ userProfile, children }: ProfileProps) => {
       )}
       <div className="flex items-center gap-2 mt-4">
         <div className="flex -space-x-2">
-          {userProfile?.followed?.map((f: any) => (
+          {userProfile?.follower?.map((f: any) => (
             <Avatar
               size="sm"
               className="border-2 border-background"
