@@ -1,7 +1,7 @@
 import { PostPlaceholder } from "@/components/features/post/PostPlaceholder";
 
 
-export default function loader() {
+export const Loader = () => {
   return (
     <div className="divide-y divide-accent">
       {Array.from({ length: 20 }).map((_, index) => {

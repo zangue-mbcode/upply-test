@@ -5,18 +5,20 @@ import * as React from "react"
 import { useQuery } from "@tanstack/react-query";
 import { getPost } from "@/lib/db/query/post.query";
 import { Post } from "@/components/features/post/Post";
-import { PostType } from "@/store/PostStore";
+import { PostType, usePostStore } from "@/store/PostStore";
 import { PostPlaceholder } from "@/components/features/post/PostPlaceholder";
 
 export const PostList = () => {
   
+  const { posts, setPosts, refetchPost, setRefetchPost } = usePostStore();
   
   const { isPending, isError, data, error, refetch } = useQuery({
     queryKey: ["post"],
     queryFn: getPost,
   });
-
   
+
+  setRefetchPost(refetch);
   console.log('post data', data?.data)
   
   return (

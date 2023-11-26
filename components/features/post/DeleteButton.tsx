@@ -19,6 +19,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import { useRouter } from 'next/navigation';
+import { usePostStore } from '@/store/PostStore';
 
 export const DeleteButton = ({
   post,
@@ -26,6 +27,7 @@ export const DeleteButton = ({
   post: any;
 }) => {  
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
+  const { posts, setPosts, refetchPost, setRefetchPost } = usePostStore();
 
   const router = useRouter();
   const { user, setUser } = useUserStore();
@@ -38,16 +40,13 @@ export const DeleteButton = ({
   .update({ is_active: false})
   .eq('id', post?.id)
 
-  router.push("/dashboard")
-  router.refresh()
+  refetchPost ? refetchPost() : null
       setIsLoading(false);
   }
 
   return (
 
     <>
-
-
       {
         post?.profile?.id === user?.id ? (
           <AlertDialog>

@@ -51,7 +51,7 @@ export const UserPage = ({userId} : any) => {
         },
       ]);
       
-      router?.refresh()
+      refetch ? refetch() : null
       console.log("like", data)
     }
     

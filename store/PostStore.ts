@@ -18,11 +18,16 @@ export type PostType = {
 type PostStore = {
   posts: PostType | null;
   setPosts: (posts: PostType | null) => void;
+  refetchPost: (() => void) | null;
+  setRefetchPost: (refetchPost: () => void) => void;
 };
 
-export const useUserProfileStore = create<PostStore>((set) => ({
+export const usePostStore = create<PostStore>((set) => ({
   posts: null,
   setPosts: (posts: PostType | null) => set({ posts }),
+  refetchPost: null,
+  setRefetchPost: (refetchPost: () => void) =>
+    set((state) => ({ refetchPost })),
   
   
 }));
