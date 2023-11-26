@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { SIDENAV_ITEMS } from '@/constants/SideNavItem';
 import { SideNavItem } from '@/constants/SideNavItemType';
 import { ChevronDown } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 
 const SideNav = () => {
@@ -35,10 +36,14 @@ export default SideNav;
 
 const MenuItem = ({ item }: { item: SideNavItem }) => {
   const pathname = usePathname();
+  const router = useRouter();
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const toggleSubMenu = () => {
     setSubMenuOpen(!subMenuOpen);
   };
+  const refreshUrl = () => {
+    router.refresh()
+  }
 
   return (
     <div className="">
@@ -70,6 +75,7 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
                     className={`${
                       subItem.path === pathname ? 'font-bold' : ''
                     }`}
+                    onClick={() => refreshUrl()}
                   >
                     <span>{subItem.title}</span>
                   </Link>

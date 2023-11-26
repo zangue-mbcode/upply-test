@@ -24,6 +24,7 @@ export default async  function RootLayout({
 
   
   return (
+    
 <div className="flex">
           <SideNav />
           <main className="flex-1">

@@ -1,3 +1,4 @@
+import TanstackProvider from '@/lib/TanstackProvider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -19,9 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-white${inter.className}`}>
         <div >
-          <main >
-            {children}
-          </main>
+          
+          <TanstackProvider>
+            <main >
+              {children}
+            </main>
+          </TanstackProvider>
+          
         </div>
       </body>
     </html>

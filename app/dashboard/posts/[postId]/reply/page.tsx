@@ -1,12 +1,9 @@
-// import { WritePostForm } from '@/app/write/WritePostForm';
-// import { getAuthSession } from '@/src/auth/nextauth-option';
-// import { prisma } from '@/src/db/prisma';
-// import { getPost } from '@/src/db/query/post.query';
-// import { Post } from '@/src/features/post/Post';
+
 import { signIn } from 'next-auth/react';
-import { createPostReply } from './write-reply.action';
 import { useUserStore } from '@/store/UserStore';
 import { WritePostForm } from '@/app/dashboard/write/WritePostForm';
+import { Post } from '@/components/features/post/Post';
+import { ReplyPost } from './ReplyPost';
 
 export default async function page({
   params,
@@ -21,7 +18,7 @@ export default async function page({
   //   await signIn();
   //   return null;
   // }
-  const { user, setUser } = useUserStore();
+  // const { user, setUser } = useUserStore();
 
   // const user = await prisma.user.findUnique({
   //   where: {
@@ -29,9 +26,9 @@ export default async function page({
   //   },
   // });
 
-  if (!user) {
-    throw new Error('User not found');
-  }
+  // if (!user) {
+  //   throw new Error('User not found');
+  // }
 
   // const post = await getPost(params.postId, session.user.id);
 
@@ -40,15 +37,6 @@ export default async function page({
   // }
 
   return (
-    <div>
-      {/* <Post post={post} key={post.id} /> */}
-      {/* <WritePostForm
-        user={user}
-        onSubmit={async (values) => {
-          'use server';
-          return createPostReply(post.id, values);
-        }}
-      /> */}
-    </div>
+    <ReplyPost postId={params.postId} />
   );
 }

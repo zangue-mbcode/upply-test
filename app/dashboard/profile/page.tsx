@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 import { Profile } from '../users/[userId]/Profile';
 import { Post } from '@/components/features/post/Post';
 import { useUserStore } from '@/store/UserStore';
+import { ProfilePage } from './ProfilePage';
 
 export default async function User({
   params,
@@ -16,37 +17,12 @@ export default async function User({
   };
 }) {
   
-  const { user, setUser } = useUserStore();
-  // const session = await getAuthSession();
-
-  // if (!session?.user.id) {
-  //   notFound();
-  // }
-
-  // const user = await getUserProfile(session.user.id);
-
-  if (!user) {
-    notFound();
-  }
+  
 
   return (
     <div className="container">
-      <Profile user={user} />
-      <div className="mt-4 border-b border-accent pb-4">
-        <Link
-          href="/profile/edit"
-          className={buttonVariants({
-            variant: 'outline',
-          })}
-        >
-          Edit profile
-        </Link>
-      </div>
-      <div className="divide-y divide-accent">
-        {/* {user.posts.map((post: any) => (
-          <Post key={post.id} post={post} />
-        ))} */}
-      </div>
+      <ProfilePage  />
+      
     </div>
   );
 }

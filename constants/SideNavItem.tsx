@@ -1,43 +1,22 @@
 
-import { Folder, HelpCircle, Home, Mail, Settings, User2 } from 'lucide-react';
+import { Folder, HelpCircle, Home, Mail, Settings, User, User2 } from 'lucide-react';
 import { SideNavItem } from './SideNavItemType';
 
 
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
-    title: 'Dashboard',
+    title: 'Post',
     path: '/dashboard',
     icon: <Home width="24" height="24" />,
   },
   {
-    title: 'Projects',
-    path: '/projects',
-    icon: <Folder width="24" height="24" />,
-    submenu: true,
-    subMenuItems: [
-      { title: 'All', path: '/projects' },
-      { title: 'Web Design', path: '/projects/web-design' },
-      { title: 'Graphic Design', path: '/projects/graphic-design' },
-    ],
-  },
-  {
-    title: 'Messages',
-    path: '/messages',
-    icon: <Mail width="24" height="24" />,
-  },
-  {
-    title: 'Settings',
-    path: '/settings',
-    icon: <Settings width="24" height="24" />,
-    submenu: true,
-    subMenuItems: [
-      { title: 'Account', path: '/settings/account' },
-      { title: 'Privacy', path: '/settings/privacy' },
-    ],
+    title: 'Write Post',
+    path: '/dashboard/write',
+    icon: <Folder width="24" height="24" />
   },
   {
     title: 'Profile',
     path: '/dashboard/profile',
-    icon: <User2 width="24" height="24" />,
+    icon: <User width="24" height="24" />
   },
 ];

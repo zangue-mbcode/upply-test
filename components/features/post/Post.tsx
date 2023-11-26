@@ -12,27 +12,27 @@ type PostProps = {
 
 export const Post = ({ post }: PostProps) => {
   return (
-    <PostWrapper user={post.user} createdAt={post.createdAt} postId={post.id}>
-      <Link href={`/posts/${post.id}`} className="text-sm text-foreground">
-        {post.content}
+    <PostWrapper user={post?.profile} createdAt={post?.createdAt} postId={post?.id}>
+      <Link href={`/posts/${post?.id}`} className="text-sm text-foreground">
+        {post?.content}
       </Link>
       <div className="flex gap-4 items-center">
-        <LikeButton postId={post.id} isLiked={post.likes.length > 0} />
+        <LikeButton post={post} isLiked={post?.like?.length > 0} />
         <Link
-          href={`/posts/${post.id}/reply`}
+          href={`/dashboard/posts/${post?.id}/reply`}
           className="rounded-md hover:bg-accent flex gap-1 items-center"
         >
           <MessageCircle size={20} />
         </Link>
       </div>
       <div>
-        <Link className="text-muted-foreground text-sm" href={`/posts/${post.id}`}>
+        {/* <Link className="text-muted-foreground text-sm" href={`/posts/${post.id}`}>
           {post._count.likes} likes
         </Link>
         {' ‧ '}
         <Link className="text-muted-foreground text-sm" href={`/posts/${post.id}`}>
           {post._count.replies} replies
-        </Link>
+        </Link> */}
       </div>
     </PostWrapper>
   );

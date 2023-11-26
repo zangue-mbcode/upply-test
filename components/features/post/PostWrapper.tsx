@@ -22,9 +22,10 @@ export const PostWrapper = ({
   className,
   children,
 }: PostWrapperProps) => {
+  
   const postHeader = (
     <div className="flex flex-row items-center gap-2">
-      <p className="text-sm text-card-foreground mr-auto">{user.username}</p>
+      <p className="text-sm text-card-foreground mr-auto">{user?.username}</p>
       {createdAt && (
         <p className="text-sm text-muted-foreground">
           {formatDate(new Date(createdAt))}
@@ -39,11 +40,11 @@ export const PostWrapper = ({
   return (
     <div className={clsx('flex w-full flex-row items-start p-4', className)}>
       <Avatar size="default">
-        {user.image ? <AvatarImage src={user.image} alt="user" /> : null}
-        <AvatarFallback>{user.username.slice(0, 1).toUpperCase()}</AvatarFallback>
+        {user?.image ? <AvatarImage src={user?.image} alt="user" /> : null}
+        <AvatarFallback>{user?.username.slice(0, 1).toUpperCase()}</AvatarFallback>
       </Avatar>
       <div className="ml-4 flex w-full flex-col gap-2">
-        {postId ? <Link href={`/users/${user.id}`}>{postHeader}</Link> : postHeader}
+        {postId ? <Link href={`/dashboard/users/${user?.id}`}>{postHeader}</Link> : postHeader}
         {children}
       </div>
     </div>

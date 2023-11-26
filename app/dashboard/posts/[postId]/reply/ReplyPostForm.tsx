@@ -3,7 +3,6 @@
 import * as React from "react"
 
 import { ContentTextArea } from '@/components/features/post/ContentTextArea';
-import { PostWrapper } from '@/components/features/post/PostWrapper';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -13,15 +12,9 @@ import {
   useZodForm,
 } from '@/components/ui/form';
 import { useUserStore } from '@/store/UserStore';
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-// import { ContentTextArea } from '@/src/features/post/ContentTextArea';
-// import { PostWrapper } from '@/src/features/post/PostWrapper';
-// import { User } from '@prisma/client';
+import { FieldValues, SubmitHandler } from "react-hook-form";
 import { useRouter } from 'next/navigation';
 import { z } from 'zod';
-import { getUserProfile } from "@/lib/db/query/user.query";
-import { useQuery } from "@tanstack/react-query";
-import { useUserProfileStore } from "@/store/UserProfileStore";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -31,7 +24,7 @@ const FormScheme = z.object({
 
 export type WritePostFormType = z.infer<typeof FormScheme>;
 
-export const WritePostForm = () => {
+export const ReplyPostForm = ({postId}: any) => {
   const form = useZodForm({
     schema: FormScheme,
   });
@@ -42,16 +35,8 @@ export const WritePostForm = () => {
   const { toast } = useToast();
   
 
-  const { isPending, isError, data, error, refetch } = useQuery({
-    queryKey: ["profile"],
-    queryFn: getUserProfile,
-  });
   
-
-  
-  const userProfile = data?.data?.find((userProfile: any) => userProfile?.id === user?.id);
-
-  
+  console.log("postId", postId)
   const onSubmit: SubmitHandler<FieldValues> = async (values, event) => {
     event?.preventDefault();
     
@@ -61,25 +46,26 @@ export const WritePostForm = () => {
       .insert([
         {
           user_id: user?.id,
+          parent_id: postId,
           content: values.content,
+          is_child: true,
         },
       ]);
 
+      console.log("postId", postId)
       console.log("post", post)
 
       toast({
         title: "Le post à été ajouté avec succès",
       });
-      router.push("/dashboard")
-        router.refresh()
+      
     
     setIsLoading(false);
   };
 
   return (
     <div className="w-full">
-      <PostWrapper user={userProfile} className="w-full">
-        <Form
+      <Form
     form={form}
       onSubmit={onSubmit}
         >
@@ -98,7 +84,6 @@ export const WritePostForm = () => {
             <Button>Post</Button>
           </div>
         </Form>
-      </PostWrapper>
     </div>
   );
 };
