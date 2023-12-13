@@ -8,8 +8,41 @@ const HomeView = () => {
   
   return (
     <>
-        <div className='w-full h-10 mb-5 border border-5 border-inherit border-dotted rounded'>
-gffgsddfg
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
+        </div>
+        <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded'>
+          gffgsddfg
         </div>
     </>
   );
