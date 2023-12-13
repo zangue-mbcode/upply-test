@@ -9,6 +9,8 @@ import { motion, useCycle } from 'framer-motion';
 import { SideNavItem } from '@/constants/SideNavItemType';
 import { SIDENAV_ITEMS } from '@/constants/SideNavItem';
 import { ChevronDown } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import clsx from 'clsx';
 
 type MenuItemWithSubMenuProps = {
   item: SideNavItem;
@@ -39,6 +41,7 @@ const HeaderMobile = () => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   const [isOpen, toggleOpen] = useCycle(false, true);
+  const { theme } = useTheme();
 
   return (
     <motion.nav
@@ -51,13 +54,16 @@ const HeaderMobile = () => {
       ref={containerRef}
     >
       <motion.div
-        className="absolute inset-0 right-0 w-full bg-white"
+        className={clsx("absolute inset-0 right-0 w-full ", theme === 'light' ? "bg-white" : "bg-black" )}
         variants={sidebar}
       />
       <motion.ul
         variants={variants}
-        className="absolute grid w-full gap-3 px-10 py-16"
+        className="absolute grid w-full gap-3 px-5 py-3"
       >
+        <motion.li variants={MenuItemVariants} className="">
+        <h1 className="text-2xl font-bold mr-auto">Upply</h1>
+        </motion.li>
         {/* {SIDENAV_ITEMS.map((item, idx) => {
           const isLastItem = idx === SIDENAV_ITEMS.length - 1; // Check if it's the last item
 
@@ -86,28 +92,28 @@ const HeaderMobile = () => {
           );
         })} */}
       </motion.ul>
-      <MenuToggle toggle={toggleOpen} />
+      <MenuToggle toggle={toggleOpen} color={theme === 'light' ? "#000000" : "#ffffff"} />
     </motion.nav>
   );
 };
 
 export default HeaderMobile;
 
-const MenuToggle = ({ toggle }: { toggle: any }) => (
+const MenuToggle = ({ toggle, color }: { toggle: any, color: string  }) => (
   <button
     onClick={toggle}
-    className="pointer-events-auto absolute right-4 top-[14px] z-30"
+    className="pointer-events-auto absolute right-4 top-[20px] z-30"
   >
-    <div className='flex h-full items-center space-x-2  text-[#fcba03] dark:bg-[#171C23] dark:text-slate-50 font-bold  px-4'>
-    <span className='dark:drop-shadow'>
-    <svg fill='none' className='fill-current h-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <svg fill='transparent' className='fill-current h-5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <Path
+    stroke={color}
         variants={{
           closed: { d: 'M 2 2.5 L 20 2.5' },
           open: { d: 'M 3 16.5 L 17 2.5' },
         }}
       />
       <Path
+    stroke={color}
         d="M 2 9.423 L 20 9.423"
         variants={{
           closed: { opacity: 1 },
@@ -116,36 +122,13 @@ const MenuToggle = ({ toggle }: { toggle: any }) => (
         transition={{ duration: 0.1 }}
       />
       <Path
+    stroke={color}
         variants={{
           closed: { d: 'M 2 16.346 L 20 16.346' },
           open: { d: 'M 3 2.5 L 17 16.346' },
         }}
       />
     </svg>
-    </span>
-    </div>
-    {/* <svg width="23" height="23" color='#ffffff' viewBox="0 0 23 23">
-      <Path
-        variants={{
-          closed: { d: 'M 2 2.5 L 20 2.5' },
-          open: { d: 'M 3 16.5 L 17 2.5' },
-        }}
-      />
-      <Path
-        d="M 2 9.423 L 20 9.423"
-        variants={{
-          closed: { opacity: 1 },
-          open: { opacity: 0 },
-        }}
-        transition={{ duration: 0.1 }}
-      />
-      <Path
-        variants={{
-          closed: { d: 'M 2 16.346 L 20 16.346' },
-          open: { d: 'M 3 2.5 L 17 16.346' },
-        }}
-      />
-    </svg> */}
   </button>
 );
 
@@ -153,7 +136,6 @@ const Path = (props: any) => (
   <motion.path
     fill="transparent"
     strokeWidth="2"
-    stroke="hsl(0, 0%, 18%)"
     strokeLinecap="round"
     {...props}
   />
