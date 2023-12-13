@@ -1,7 +1,7 @@
 
 
-import { Header } from '@/components/features/assemblies/homeAssemblies/Header'
-import HeaderMobile from '@/components/features/assemblies/homeAssemblies/header-mobile'
+import { Header } from '@/components/features/assemblies/layout/Header'
+import HeaderMobile from '@/components/features/assemblies/layout/header-mobile'
 import type { Metadata } from 'next'
 
 
@@ -18,9 +18,11 @@ export default function RootLayout({
   
   return (
     <div className="flex flex-col h-full">
-    <Header />
-    <HeaderMobile />
-    <div className="flex-1 w-full m-auto py-[80px] px-5 w-full">{children}</div>
-  </div>
+      <div className='z-40'>
+        <Header />
+        <HeaderMobile />
+      </div>
+      <div className="flex-1 w-full m-auto  w-full z-0">{children}</div>
+    </div>
   )
 }

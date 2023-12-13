@@ -1,5 +1,6 @@
 'use client';
 
+import { HeaderCenteredItems } from '@/components/features/assemblies/homeAssemblies/header-centered-items';
 import React from 'react';
 
 
@@ -8,6 +9,7 @@ const HomeView = () => {
   
   return (
     <>
+        <HeaderCenteredItems />
         <div className='w-full h-[200px] mb-5 border border-5 border-[#000000] border-dotted rounded bg-[#32a852]'>
           gffgsddfg
         </div>

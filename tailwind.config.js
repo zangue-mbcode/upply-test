@@ -70,6 +70,14 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      animation: {
+        'linear': 'wiggle 30s linear infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '100%, 0%': { transform: 'translate()' },
+        }
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
