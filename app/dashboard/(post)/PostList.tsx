@@ -10,7 +10,7 @@ import { PostPlaceholder } from "@/components/features/post/PostPlaceholder";
 
 export const PostList = () => {
   
-  const { posts, setPosts, refetchPost, setRefetchPost } = usePostStore();
+  // const { posts, setPosts, refetchPost, setRefetchPost } = usePostStore();
   
   const { isPending, isError, data, error, refetch } = useQuery({
     queryKey: ["post"],
@@ -18,7 +18,7 @@ export const PostList = () => {
   });
   
 
-  setRefetchPost(refetch);
+  // setRefetchPost(refetch);
   console.log('post data', data?.data)
   
   return (

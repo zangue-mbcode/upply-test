@@ -1,5 +1,6 @@
 
 
+import { Header } from '@/components/features/assemblies/homeAssemblies/Header'
 import type { Metadata } from 'next'
 
 
@@ -15,8 +16,9 @@ export default function RootLayout({
 }) {
   
   return (
-    <div>
-
-    </div>
+    <div className="flex flex-col h-full">
+    <Header />
+    <div className="flex-1 w-full m-auto py-12 w-full">{children}</div>
+  </div>
   )
 }
