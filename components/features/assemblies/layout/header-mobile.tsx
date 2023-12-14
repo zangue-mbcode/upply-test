@@ -11,6 +11,8 @@ import { SIDENAV_ITEMS } from '@/constants/SideNavItem';
 import { ChevronDown } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import clsx from 'clsx';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
 
 type MenuItemWithSubMenuProps = {
   item: SideNavItem;
@@ -54,15 +56,48 @@ const HeaderMobile = () => {
       ref={containerRef}
     >
       <motion.div
-        className={clsx("absolute inset-0 right-0 w-full ", theme === 'light' ? "bg-white" : "bg-black" )}
+        className={clsx("absolute inset-0 right-0 w-full border border-slate-200 bg-slate-200/50 p-4 py-6 shadow-lg shadow-black/5 dark:border-slate-700 dark:bg-black/70 dark:shadow-black/10 sm:inset-x-6" )}
         variants={sidebar}
       />
       <motion.ul
         variants={variants}
         className="absolute grid w-full gap-3 px-5 py-3"
       >
-        <motion.li variants={MenuItemVariants} className="">
+        {/* <motion.li variants={MenuItemVariants} className="">
         <h1 className="text-2xl font-bold mr-auto">Upply</h1>
+        </motion.li> */}
+
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="mt-[100px] w-full flex justify-center">
+          <Link href="#about" className="relative flex h-7 items-center text-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                About
+          </Link>
+        </motion.li>
+
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center">
+        <Link href="#process" className="relative flex h-7 items-center text-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Process
+                </Link>
+        </motion.li>
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center">
+        <Link href="#work" className="relative flex h-7 items-center text-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Work
+                </Link>
+        </motion.li>
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center">
+        <Link href="#pricing" className="relative flex h-7 items-center text-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Pricing
+                </Link>
+        </motion.li>
+
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center mt-10">
+        <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "w-full rounded-full cursor-pointer" )}>
+              Login
+            </Link>
+        </motion.li>
+        <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center">
+        <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "w-full rounded-full cursor-pointer" )}>
+            Register
+            </Link>
         </motion.li>
         
         

@@ -45,15 +45,17 @@ export const Header = async () => {
           
         </div>
         <div className="mr-5 flex flex-row gap-5">
-        <div className="flex items-center space-x-4">
-          <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "rounded-full cursor-pointer" )}>
-            Login
-          </Link>
-          <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "rounded-full cursor-pointer" )}>
-          Register
-          </Link>
-          
-          
+        <div className=" hidden md:block">
+          <div className="flex items-center space-x-4">
+            <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "rounded-full cursor-pointer" )}>
+              Login
+            </Link>
+            <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "rounded-full cursor-pointer" )}>
+            Register
+            </Link>
+            
+            
+          </div>
         </div>
        
           
