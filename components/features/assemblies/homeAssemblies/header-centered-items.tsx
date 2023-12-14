@@ -24,10 +24,16 @@ export const HeaderCenteredItems = async () => {
     const [isHovered1, setHovered1] = useState(false)
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
         <div className="w-full pt-[250px] pb-[150px] backdrop-blur-lg backdrop-saturate-150 bg-background/70 flex justify-center">
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
-                <h1 className="text-center text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">Your Next-Level SaaS Website is only one click away</h1>
+                <h1 className="text-center text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">
+                    Your Next-Level &nbsp;
+                    <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">
+                    SaaS Website &nbsp;
+                    </span>
+                      is only one click away
+                    </h1>
                 <p className="text-center paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-lg mt-8 lg:mt-12">
                     <span>The first ever</span> &nbsp;
                     <b>design and development subscription</b>&nbsp;
@@ -61,7 +67,7 @@ export const HeaderCenteredItems = async () => {
             </div>
         </div>
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pb-12 lg:pb-16 mt-10">
+        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pb-12 lg:pb-16 mt-10 ">
             <div className="relative overflow-x-hidden lg:-mx-16">
                 <div>
                     <div className="flex animate-scroll py-4">
@@ -326,9 +332,12 @@ export const HeaderCenteredItems = async () => {
         </div>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24">
+        <section id="about" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
                 <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div className="absolute w-1/2 h-32 -right-8 dark:right-auto dark:-left-8 -top-16 bg-indigo-500 dark:bg-white blur-3xl opacity-25">
+
+</div>
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
@@ -405,12 +414,12 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden ">
             <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  group pt-24 lg:pt-48 grid grid-cols-1 gap-y-24 md:grid-cols-2">
                 <div className="md:pr-4 md:pb-8">
                     <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                         <span>
-                        Focus on your product – <br />let us handle your website
+                        <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">Focus</span>  on your product – <br />let us handle your website
                         </span>
                     </h2>
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 max-w-lg">
@@ -445,7 +454,7 @@ export const HeaderCenteredItems = async () => {
         </div>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24">
+        <section id="process" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
             <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
@@ -523,10 +532,10 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  undefined">
+        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  ">
             <div className="lg:sticky lg:-top-8 pt-24 lg:pt-48 mb-12 lg:mb-16">
                 <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg lg:text-center">
-                Unlock your products potential
+                Unlock your&nbsp; <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">products</span>&nbsp;  potential
                 </h2>
             </div>
 
@@ -701,10 +710,10 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 pb-16 lg:pb-24">
+        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 pb-16 lg:pb-24 ">
             <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                 <span>
-                Cutting-edge design, <br /> crafted for your product
+                Cutting-edge&nbsp; <span  className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">design</span>, <br /> crafted for your product
                 </span>
             </h2>
             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-12 lg:mb-16 max-w-xl">
@@ -801,10 +810,10 @@ export const HeaderCenteredItems = async () => {
         </div>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24">
+        <section id="work" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
             <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                 <span>No Webflow, no Framer,
-                    <br />but real Next.js development
+                    <br />but real <span   className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">Next.js development</span> 
                 </span>
             </h2>
             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-12 lg:mb-16 max-w-xl">
@@ -911,7 +920,7 @@ export const HeaderCenteredItems = async () => {
             <div className="relative flex flex-col items-start md:items-center justify-end md:pb-16 lg:pb-24">
                 <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg md:text-center">
                     <span>
-                    Recent <br /> work
+                    Recent <br /> <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">work</span> 
                     </span>
                 </h2>
                 <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-8 max-w-xs md:text-center">
@@ -984,9 +993,9 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 pb-16 lg:pb-20">
+        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 pb-16 lg:pb-20 ">
             <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg lg:text-center mb-12 lg:mb-16">
-            Fitted to your needs
+            Fitted to  <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">your needs</span>
             </h2>
 
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
@@ -1076,7 +1085,7 @@ export const HeaderCenteredItems = async () => {
 
 
 
-        <section id="pricing" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <section id="pricing" className=" relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="relative">
                 <div className="relative overflow-hidden w-full h-full p-px rounded-3xl lg:rounded-[2.5rem] bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
                     <div className="absolute w-1/2 h-32 -right-8 dark:right-auto dark:-left-8 -top-16 bg-indigo-500 dark:bg-white blur-3xl opacity-25"></div>
@@ -1235,7 +1244,7 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
+        <section id="faq" className=" relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
 
         </section>
 
@@ -1248,13 +1257,13 @@ export const HeaderCenteredItems = async () => {
         </div>
 
 
-        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  group relative overflow-hidden pb-24 lg:pb-48 flex flex-col items-start lg:items-center pt-16 lg:pt-24">
+        <section className=" relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  group relative overflow-hidden pb-24 lg:pb-48 flex flex-col items-start lg:items-center pt-16 lg:pt-24">
             <div className="absolute -top-12  bg-indigo-400 w-1/2 h-32 blur-3xl sm:blur-4xl transition-opacity duration-500 opacity-40 group-hover:opacity-60">
 
             </div>
 
             <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg lg:text-center">
-            Level up your SaaS website
+            <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">Level up</span>  your SaaS website 
             </h2>
             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-8 max-w-lg lg:text-center">
             What are you waiting for? Let's build a beautiful, compelling website and raise your product to the level of big players.
