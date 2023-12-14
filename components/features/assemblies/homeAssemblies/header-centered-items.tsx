@@ -396,14 +396,14 @@ export const HeaderCenteredItems = async () => {
                 <div className="md:pr-4 md:pb-8">
                     <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                         <span>
-                        Focus on your product – <br />let us handle your website
+                        Focus on your product  <br />let us handle your website
                         </span>
                     </h2>
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 max-w-lg">
                     We&apos;ll take care of designing your <b>top-tier website</b>
                     including graphics, animations and docs pages. And we&apos;ll build it out using the 
                     <b>latest frontend technologies</b>
-                    – no Webflow, no Framer.
+                     no Webflow, no Framer.
                     </p>
                 </div>
                 <div className="relative flex flex-col justify-end">
@@ -544,7 +544,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
@@ -600,7 +600,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
@@ -657,7 +657,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
