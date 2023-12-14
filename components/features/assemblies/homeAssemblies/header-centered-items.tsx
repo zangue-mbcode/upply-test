@@ -1264,8 +1264,8 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        {/* <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
-            <div>
+        <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
+            {/* <div>
                 <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                 FAQs
                 </h2>
@@ -1276,8 +1276,8 @@ export const HeaderCenteredItems = async () => {
             </div>
             <div className="w-full">
                 <AnimatedDiv faqs={faqs} />
-            </div>
-        </section> */}
+            </div> */}
+        </section>
 
         <div className="relative border-t border-slate-200 dark:border-slate-700">
             <div className="absolute inset-x-0 top-0 h-96 overflow-hidden">
