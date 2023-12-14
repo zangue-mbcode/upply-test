@@ -968,7 +968,7 @@ export const HeaderCenteredItems = async () => {
                 <Star className="h-4 w-4 text-indigo-500 dark:text-indigo-400"/>
             </div>
             <div className="text-3xl font-display italic leading-tight text-indigo-500 dark:text-indigo-400 relative lg:text-center">
-            "A true insider tip with attention to detail."
+            &quot;A true insider tip with attention to detail.&quot;
             </div>
 
             <div className="flex relative items-center gap-3">
