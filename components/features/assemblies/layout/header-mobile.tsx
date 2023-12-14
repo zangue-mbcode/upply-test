@@ -64,33 +64,8 @@ const HeaderMobile = () => {
         <motion.li variants={MenuItemVariants} className="">
         <h1 className="text-2xl font-bold mr-auto">Upply</h1>
         </motion.li>
-        {/* {SIDENAV_ITEMS.map((item, idx) => {
-          const isLastItem = idx === SIDENAV_ITEMS.length - 1; // Check if it's the last item
-
-          return (
-            <div key={idx}>
-              {item.submenu ? (
-                <MenuItemWithSubMenu item={item} toggleOpen={toggleOpen} />
-              ) : (
-                <MenuItem>
-                  <Link
-                    href={item.path}
-                    onClick={() => toggleOpen()}
-                    className={`flex w-full text-2xl ${
-                      item.path === pathname ? 'font-bold' : ''
-                    }`}
-                  >
-                    {item.title}
-                  </Link>
-                </MenuItem>
-              )}
-
-              {!isLastItem && (
-                <MenuItem className="my-3 h-px w-full bg-gray-300" />
-              )}
-            </div>
-          );
-        })} */}
+        
+        
       </motion.ul>
       <MenuToggle toggle={toggleOpen} color={theme === 'light' ? "#000000" : "#ffffff"} />
     </motion.nav>
@@ -241,7 +216,7 @@ const useDimensions = (ref: any) => {
       dimensions.current.width = ref.current.offsetWidth;
       dimensions.current.height = ref.current.offsetHeight;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [ref]);
 
   return dimensions.current;

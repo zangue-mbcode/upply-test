@@ -9,7 +9,7 @@ export const Header = async () => {
         <h1 className="text-2xl font-bold mr-auto">Upply</h1>
         <div className="mr-5">
         <ThemeToggle />
-        {/* {session?.user.id ? <UserProfile /> : <LoginButton />} */}
+        
         </div>
       </div>
     </header>
