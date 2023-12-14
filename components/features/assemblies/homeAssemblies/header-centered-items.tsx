@@ -968,7 +968,7 @@ export const HeaderCenteredItems = async () => {
                 <Star className="h-4 w-4 text-indigo-500 dark:text-indigo-400"/>
             </div>
             <div className="text-3xl font-display italic leading-tight text-indigo-500 dark:text-indigo-400 relative lg:text-center">
-            "A true insider tip with attention to detail."
+            &quot;A true insider tip with attention to detail.&quot;
             </div>
 
             <div className="flex relative items-center gap-3">
@@ -1236,7 +1236,7 @@ export const HeaderCenteredItems = async () => {
                 Not sure if this is <br /> right for you?
                 </h2>
                 <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 max-w-lg">
-                We offer premium services that aren't affordable for everyone. If you're not sure wether our service is the right fit for your company or product, feel free to schedule a call with our founder Lukas.
+                We offer premium services that aren&apos;t affordable for everyone. If you&apos;re not sure wether our service is the right fit for your company or product, feel free to schedule a call with our founder Lukas.
                 </p>
 
                 <Button variant="outline" className="rounded-full"> Schedule a Call</Button>
@@ -1266,7 +1266,7 @@ export const HeaderCenteredItems = async () => {
             <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">Level up</span>  your SaaS website 
             </h2>
             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-8 max-w-lg lg:text-center">
-            What are you waiting for? Let's build a beautiful, compelling website and raise your product to the level of big players.
+            What are you waiting for? Let&apos;s build a beautiful, compelling website and raise your product to the level of big players.
             </p>
 
             <div className="flex flex-wrap gap-2">
