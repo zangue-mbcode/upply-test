@@ -2,7 +2,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { motion, useCycle } from 'framer-motion';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import Image from "next/image";
 import { useState } from "react";
 import brand1 from "@/public/contentlayer-black.svg"
@@ -18,10 +18,21 @@ import clearystDark from "@/public/clearyst-dark.webp"
 import clearystLight from "@/public/clearyst-light.webp"
 import { Airplay, BookImage, BoomBox, Camera, CheckCircle2, Dribbble, Figma, Film, Framer, Globe2, GraduationCap, Radar, RadioTower, Star } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import AnimatedDiv from "@/components/elements/AnimatedDiv";
 
 export const HeaderCenteredItems = async () => {
     const [isHovered, setHovered] = useState(false)
     const [isHovered1, setHovered1] = useState(false)
+    const faqs = [
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+      ];
 
   return (
     <div className="w-full ">
@@ -333,6 +344,15 @@ export const HeaderCenteredItems = async () => {
 
 
         <section id="about" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
+        <div className="absolute bottom-0 h-96 inset-x-0">
+                <div  style={{borderRadius:"50% 50%"}}  className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-1xl sm:blur-2xl transition-opacity duration-100 opacity-40 group-hover:opacity-50">
+
+                </div>
+                <Image src={bgGrid} alt="" className="h-full w-auto mx-auto opacity-50 pointer-events-none" width="1920" height="1080"
+                                style={{color:"transparent"}}>
+
+                </Image>
+            </div>
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
                 <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                 <div className="absolute w-1/2 h-32 -right-8 dark:right-auto dark:-left-8 -top-16 bg-indigo-500 dark:bg-white blur-3xl opacity-25">
@@ -1244,9 +1264,20 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section id="faq" className=" relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
-
-        </section>
+        {/* <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-y-12 gap-x-16 pb-16 lg:pb-24">
+            <div>
+                <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
+                FAQs
+                </h2>
+                <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 max-w-lg">
+                We always aim to be completely clear and transparent with our services. If there's anything left unclear, feel free to schedule a call with our founder Lukas.
+                </p>
+                <Button className="rounded-full">Schedule a Call</Button>
+            </div>
+            <div className="w-full">
+                <AnimatedDiv faqs={faqs} />
+            </div>
+        </section> */}
 
         <div className="relative border-t border-slate-200 dark:border-slate-700">
             <div className="absolute inset-x-0 top-0 h-96 overflow-hidden">
