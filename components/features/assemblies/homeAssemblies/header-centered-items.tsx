@@ -2,9 +2,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { motion, useCycle } from 'framer-motion';
 import Image from "next/image";
-import { useState } from "react";
 import brand1 from "@/public/contentlayer-black.svg"
 import brandWhite from "@/public/contentlayer-white.svg"
 import aboutDark from "@/public/urlbox-contentlayer-dark.webp"
@@ -18,8 +16,6 @@ import clearystDark from "@/public/clearyst-dark.webp"
 import clearystLight from "@/public/clearyst-light.webp"
 
 export const HeaderCenteredItems = async () => {
-    const [isHovered, setHovered] = useState(false)
-    const [isHovered1, setHovered1] = useState(false)
 
   return (
     <div className="w-full">
@@ -34,26 +30,12 @@ export const HeaderCenteredItems = async () => {
                     <span>without hiring an in-house team.</span>
                 </p>
                 <div className="flex justify-center gap-5">
-                    <motion.div
-                        onHoverStart={() => setHovered(true)}
-                        onHoverEnd={() => setHovered(false)}
-                    >
-                        <Button variant="default" className="rounded-full">
+                <Button variant="default" className="rounded-full">
                             <span>Get Started</span>
                         </Button>
-                        <span>
-                       
-                        </span>
-                    </motion.div>
-                    <motion.div
-                        onHoverStart={() => setHovered1(true)}
-                        onHoverEnd={() => setHovered1(false)}
-                    >
                         <Button variant="outline" className="rounded-full">
                             <span>Schedule a Call</span>
                         </Button>
-                    </motion.div>
-                    
                     
                 </div>
             </div>
@@ -933,14 +915,9 @@ export const HeaderCenteredItems = async () => {
                 <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-8 max-w-xs md:text-center">
                 This is some of our latest design and/or development work.
                 </p>
-                <motion.div
-                        onHoverStart={() => setHovered1(true)}
-                        onHoverEnd={() => setHovered1(false)}
-                    >
-                        <Button variant="default" className="rounded-full ">
+                <Button variant="default" className="rounded-full ">
                             <span>See more</span>
                         </Button>
-                    </motion.div>
             </div>
             <div>
                 <Image src={effectLight} alt="" className="dark:hidden relative w-full" width="1200" height="748"
