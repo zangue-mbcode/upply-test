@@ -2,7 +2,9 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
+import { motion, useCycle } from 'framer-motion';
 import Image from "next/image";
+import { useState } from "react";
 import brand1 from "@/public/contentlayer-black.svg"
 import brandWhite from "@/public/contentlayer-white.svg"
 import aboutDark from "@/public/urlbox-contentlayer-dark.webp"
@@ -16,6 +18,8 @@ import clearystDark from "@/public/clearyst-dark.webp"
 import clearystLight from "@/public/clearyst-light.webp"
 
 export const HeaderCenteredItems = async () => {
+    const [isHovered, setHovered] = useState(false)
+    const [isHovered1, setHovered1] = useState(false)
 
   return (
     <div className="w-full">
@@ -30,12 +34,26 @@ export const HeaderCenteredItems = async () => {
                     <span>without hiring an in-house team.</span>
                 </p>
                 <div className="flex justify-center gap-5">
-                <Button variant="default" className="rounded-full">
+                    <motion.div
+                        onHoverStart={() => setHovered(true)}
+                        onHoverEnd={() => setHovered(false)}
+                    >
+                        <Button variant="default" className="rounded-full">
                             <span>Get Started</span>
                         </Button>
+                        <span>
+                       
+                        </span>
+                    </motion.div>
+                    <motion.div
+                        onHoverStart={() => setHovered1(true)}
+                        onHoverEnd={() => setHovered1(false)}
+                    >
                         <Button variant="outline" className="rounded-full">
                             <span>Schedule a Call</span>
                         </Button>
+                    </motion.div>
+                    
                     
                 </div>
             </div>
@@ -396,14 +414,14 @@ export const HeaderCenteredItems = async () => {
                 <div className="md:pr-4 md:pb-8">
                     <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                         <span>
-                        Focus on your product  <br />let us handle your website
+                        Focus on your product – <br />let us handle your website
                         </span>
                     </h2>
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 max-w-lg">
                     We&apos;ll take care of designing your <b>top-tier website</b>
                     including graphics, animations and docs pages. And we&apos;ll build it out using the 
                     <b>latest frontend technologies</b>
-                     no Webflow, no Framer.
+                    – no Webflow, no Framer.
                     </p>
                 </div>
                 <div className="relative flex flex-col justify-end">
@@ -544,7 +562,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
@@ -600,7 +618,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
@@ -657,7 +675,7 @@ export const HeaderCenteredItems = async () => {
                             <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                                 <span>
                                 Subscribe in just a minute and get access to your own request board with instructions on how to get the most out of your subscription. When you&apos;re ready for a top-tier website, 
-                                <b>add as many requests as you like</b>   we&apos;ll tackle them one by one.
+                                <b>add as many requests as you like</b>  – we&apos;ll tackle them one by one.
                                 </span>
                             </p>
                         </div>
@@ -915,9 +933,14 @@ export const HeaderCenteredItems = async () => {
                 <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base mt-7 mb-8 max-w-xs md:text-center">
                 This is some of our latest design and/or development work.
                 </p>
-                <Button variant="default" className="rounded-full ">
+                <motion.div
+                        onHoverStart={() => setHovered1(true)}
+                        onHoverEnd={() => setHovered1(false)}
+                    >
+                        <Button variant="default" className="rounded-full ">
                             <span>See more</span>
                         </Button>
+                    </motion.div>
             </div>
             <div>
                 <Image src={effectLight} alt="" className="dark:hidden relative w-full" width="1200" height="748"
