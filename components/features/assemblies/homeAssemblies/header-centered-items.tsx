@@ -49,13 +49,13 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -63,14 +63,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -78,14 +78,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -93,14 +93,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -108,14 +108,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -123,14 +123,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -138,14 +138,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -153,14 +153,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -168,14 +168,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -183,14 +183,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -198,14 +198,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -213,14 +213,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -228,14 +228,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -243,14 +243,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -258,14 +258,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -273,14 +273,14 @@ export const HeaderCenteredItems = async () => {
                             <Image src={brand1} alt="brand image" 
                             className="object-center object-contain dark:hidden"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
 
                             </Image>
                             <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                             className="object-center object-contain hidden dark:block"
                             style={{position:'absolute', height:"100%", width:"100%", left:0, top:0, right:0, bottom:0, color:"transparent"}}
-                            // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                            
                             >
                             </Image>
                         </div>
@@ -816,13 +816,13 @@ export const HeaderCenteredItems = async () => {
                     <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto dark:hidden"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                     <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto hidden dark:block"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                 </div>
@@ -830,13 +830,13 @@ export const HeaderCenteredItems = async () => {
                     <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto dark:hidden"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                     <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto hidden dark:block"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                 </div>
@@ -844,13 +844,13 @@ export const HeaderCenteredItems = async () => {
                     <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto dark:hidden"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                     <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto hidden dark:block"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                 </div>
@@ -858,13 +858,13 @@ export const HeaderCenteredItems = async () => {
                     <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto dark:hidden"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                     <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto hidden dark:block"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                 </div>
@@ -872,13 +872,13 @@ export const HeaderCenteredItems = async () => {
                     <Image src={brand1} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto dark:hidden"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                     <Image src={brandWhite} alt="brand image"  loading="lazy" decoding="async" data-nimg="fill"
                     className="h-8 w-auto hidden dark:block"
                     style={{color:"transparent"}}
-                    // style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    
                     >
                     </Image>
                 </div>
