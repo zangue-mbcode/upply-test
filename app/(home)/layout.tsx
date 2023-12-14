@@ -1,5 +1,6 @@
 
 
+import { Footer } from '@/components/features/assemblies/layout/Footer'
 import { Header } from '@/components/features/assemblies/layout/Header'
 import HeaderMobile from '@/components/features/assemblies/layout/header-mobile'
 import type { Metadata } from 'next'
@@ -23,6 +24,10 @@ export default function RootLayout({
         <HeaderMobile />
       </div>
       <div className="flex-1 w-full m-auto  w-full z-0">{children}</div>
+
+      <div className='w-full'>
+      <Footer />
+      </div>
     </div>
   )
 }
