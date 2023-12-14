@@ -16,28 +16,13 @@ import { cn } from '@/lib/utils';
 import { LogOut, User2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
-import { useUserStore } from '@/store/UserStore';
 import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar';
 
 const Header = () => {
   const scrolled = useScroll(5);
   const selectedLayout = useSelectedLayoutSegment();
   const router = useRouter();
-  const { user, setUser } = useUserStore();
-
-  useEffect(() => {
-      if (!user) {
-        const local_user = JSON.parse(localStorage.getItem("UpplyTestUser")!)
-        if (!local_user) {
-          router.push('/')
-          router.refresh()
-        }else{
-          setUser(local_user)
-        }
-      }
-    
-      console.log('useUserStore', user)
-  }, [user]);
+  
   
   
   const logout = async () => {
@@ -79,9 +64,7 @@ const Header = () => {
                 <Avatar>
                   {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
                   <AvatarFallback>
-                    { 
-                      user && user?.user_metadata?.first_name ? user?.user_metadata?.first_name[0]+user?.user_metadata?.last_name[0] : ""
-                    }
+                   UZ
                   </AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>

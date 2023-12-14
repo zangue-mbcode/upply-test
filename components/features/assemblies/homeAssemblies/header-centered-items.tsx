@@ -27,10 +27,10 @@ export const HeaderCenteredItems = async () => {
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
                 <h1 className="text-center text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">Your Next-Level SaaS Website is only one click away</h1>
                 <p className="text-center paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-lg mt-8 lg:mt-12">
-                    <span>The first ever</span> {" "}
-                    <b>design and development subscription</b>{" "}
-                    <span>for SaaS companies. Get</span>{" "}
-                    <b>highly detailed designs and modern frontend development</b>{" "}
+                    <span>The first ever</span> &nbsp;
+                    <b>design and development subscription</b>&nbsp;
+                    <span>for SaaS companies. Get</span>&nbsp;
+                    <b>highly detailed designs and modern frontend development</b>&nbsp;
                     <span>without hiring an in-house team.</span>
                 </p>
                 <div className="flex justify-center gap-5">
