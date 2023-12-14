@@ -608,7 +608,7 @@ export const HeaderCenteredItems = async () => {
                         <div className="px-6 py-8 lg:p-16 lg:pr-0">
                             <div className="flex flex-col lg:flex-row items-start gap-x-4 gap-y-2 mb-1">
                                 <div className="mb-1 flex items-center space-x-4 font-mono uppercase text-indigo-500 dark:text-indigo-400 sm:mb-3">
-                                    <span>001</span>
+                                    <span>002</span>
                                     <span  className="text-black/20 dark:text-white/20">{ "///"} </span>
                                 </div>
                                 <h3 className="text-black dark:text-white font-display font-extrabold leading-tight text-lg lg:text-xl dark:drop-shadow-sm -mt-0.5 mb-3">
@@ -665,7 +665,7 @@ export const HeaderCenteredItems = async () => {
                         <div className="px-6 py-8 lg:p-16 lg:pr-0">
                             <div className="flex flex-col lg:flex-row items-start gap-x-4 gap-y-2 mb-1">
                                 <div className="mb-1 flex items-center space-x-4 font-mono uppercase text-indigo-500 dark:text-indigo-400 sm:mb-3">
-                                    <span>001</span>
+                                    <span>003</span>
                                     <span  className="text-black/20 dark:text-white/20">{ "///"} </span>
                                 </div>
                                 <h3 className="text-black dark:text-white font-display font-extrabold leading-tight text-lg lg:text-xl dark:drop-shadow-sm -mt-0.5 mb-3">
