@@ -345,7 +345,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
-                                    <Airplay className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
+                                    <Airplay strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
                             
@@ -369,7 +369,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
-                                    <BoomBox className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
+                                    <BoomBox strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
                             
@@ -393,7 +393,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
-                                    <RadioTower className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
+                                    <RadioTower strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
                             
@@ -464,7 +464,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
-                                    <Film className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
+                                    <Film  strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
                             
@@ -488,7 +488,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
-                                    <BookImage className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
+                                    <BookImage strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
                             
@@ -512,7 +512,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
-                                    <Camera className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
+                                    <Camera strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
                             
@@ -732,7 +732,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
-                                    <Globe2 className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
+                                    <Globe2 strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
                             
@@ -756,7 +756,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
-                                    <GraduationCap className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
+                                    <GraduationCap strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
                             
@@ -780,7 +780,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
-                                    <Radar className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
+                                    <Radar strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
                             
@@ -1007,7 +1007,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
-                                    <Dribbble className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
+                                    <Dribbble strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
                             
@@ -1031,7 +1031,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
-                                    <Figma className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
+                                    <Figma strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
                             
@@ -1055,7 +1055,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
-                                    <Framer className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
+                                    <Framer strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
                             

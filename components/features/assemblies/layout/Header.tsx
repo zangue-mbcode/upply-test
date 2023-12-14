@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { ThemeToggle } from "../../theme/ThemeToggle";
+import { Button, buttonVariants } from "@/components/ui/button";
+import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 
 export const Header = async () => {
@@ -12,35 +15,48 @@ export const Header = async () => {
 
         </div>
       </div>
-      <div className="container flex items-center py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
-        <h1 className="text-2xl font-bold mr-auto">Upply</h1>
-        <div className="mr-5 flex flex-row gap-5">
-
-        {/* <div className="group fixed top-6 flex h-12 items-center rounded-3xl border border-slate-200 bg-slate-100/60 pr-1.5 shadow-lg shadow-black/5 backdrop-blur-lg dark:border-slate-700 dark:bg-black/70 dark:shadow-black/10 lg:top-10">
-
-</div> */}
+      <div className="container flex items-center justify-between py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
+        <div className="flex flex-row gap-10">
+          <h1 className="text-2xl font-bold mr-auto">Upply</h1>
+          <div className=" hidden md:block">
           <ul className="relative flex items-center space-x-4 pl-4">
-            <li className="relative cursor-pointer">
-              <Link href="#about" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
-              About
-              </Link>
-            </li>
-            <li className="relative cursor-pointer">
-              <Link href="#process" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
-              Process
-              </Link>
-            </li>
-            <li className="relative cursor-pointer">
-              <Link href="#work" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
-              Work
-              </Link>
-            </li>
-            <li className="relative cursor-pointer">
-              <Link href="#pricing" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
-              Pricing
-              </Link>
-            </li>
-          </ul>
+              <li className="relative cursor-pointer">
+                <Link href="#about" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                About
+                </Link>
+              </li>
+              <li className="relative cursor-pointer">
+                <Link href="#process" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Process
+                </Link>
+              </li>
+              <li className="relative cursor-pointer">
+                <Link href="#work" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Work
+                </Link>
+              </li>
+              <li className="relative cursor-pointer">
+                <Link href="#pricing" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                Pricing
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div className="mr-5 flex flex-row gap-5">
+        <div className="flex items-center space-x-4">
+          <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "rounded-full cursor-pointer" )}>
+            Login
+          </Link>
+          <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "rounded-full cursor-pointer" )}>
+          Register
+          </Link>
+          
+          
+        </div>
+       
+          
         <ThemeToggle />
         
         </div>
