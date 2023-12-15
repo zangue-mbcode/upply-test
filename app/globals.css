@@ -125,3 +125,51 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.button-with-arrow {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: #3498db; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte */
+  cursor: pointer;
+  font-size: 16px;
+  padding-right: 20px; /* Ajoutez de l'espace pour la flèche à droite */
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-svg {
+  margin-left: 5px; /* Ajoutez un espace entre le texte et la flèche */
+  transition: stroke-dasharray 0.3s ease-in-out;
+}
+
+.button-with-arrow:hover .arrow-svg {
+  stroke-dasharray: 100 0; /* Animer le tracé de la flèche pour la rendre visible */
+}
+
+.animate-btn{
+  .pathOne{
+    transform: scaleX(0);
+     transform-origin: 10px 5px;
+    opacity: 0;
+  }
+  .pathTwo{
+    transform: translateX(-7px);
+    transform-origin: 16.5001px 4.99993px;
+  }
+}
+.animate-btn:hover{
+  .pathOne{
+    transform: none;
+     transform-origin: 10px 5px;
+    opacity: 1;
+  }
+  .pathTwo{
+    transform: none;
+    transform-origin: 16.5001px 4.99993px;
+  }
+}
