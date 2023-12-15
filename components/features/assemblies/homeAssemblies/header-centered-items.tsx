@@ -1270,7 +1270,7 @@ export const HeaderCenteredItems = async () => {
                 FAQs
                 </h2>
                 <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 max-w-lg">
-                We always aim to be completely clear and transparent with our services. If there's anything left unclear, feel free to schedule a call with our founder Lukas.
+                We always aim to be completely clear and transparent with our services. If there&apos;s anything left unclear, feel free to schedule a call with our founder Lukas.
                 </p>
                 <Button className="rounded-full">Schedule a Call</Button>
             </div>

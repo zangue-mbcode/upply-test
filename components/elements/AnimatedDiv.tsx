@@ -1,5 +1,5 @@
 // Importez les modules nécessaires
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import {
     Accordion,
     AccordionContent,
@@ -8,7 +8,7 @@ import {
   } from "@/components/ui/accordion"
 // Créez votre composant Next.js avec Framer Motion
 const AnimatedDiv = ({ faqs }: any) => {
-  const faqRefs = faqs.map(() => useRef(null));
+  const faqRefs = useMemo(() => faqs.map(() => React.createRef()), [faqs]);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
