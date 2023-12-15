@@ -8,30 +8,34 @@ import {
   } from "@/components/ui/accordion"
 // Créez votre composant Next.js avec Framer Motion
 const AnimatedDiv = ({ faqs }: any) => {
-    const faqRef = useRef(null);
+  const faqRefs = faqs.map(() => useRef(null));
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('faq-item-visible');
+          } else {
+            entry.target.classList.remove('faq-item-visible');
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('faq-item-visible');
-            } else {
-              entry.target.classList.remove('faq-item-visible');
-            }
-          });
-        },
-        { threshold: 0.5 }
-      );
-  
+    // Utilisez un objet pour stocker les références
+
+    faqRefs.forEach((faqRef: any) => {
       if (faqRef.current) {
         observer.observe(faqRef.current);
       }
-  
-      return () => {
-        observer.disconnect();
-      };
-    }, []); 
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [faqs]);
+
   
     return (
       <div>
@@ -39,9 +43,9 @@ const AnimatedDiv = ({ faqs }: any) => {
         {faqs.map((faq: any, index: any) => (
             
             
-                <AccordionItem key={index} ref={faqRef} className="faq-item" value={"item-"+index}>
-                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                    <AccordionContent>
+                <AccordionItem key={index} ref={faqRefs[index]} className="faq-item w-full border-dashed border-slate-950 dark:border-slate-600 border-2 rounded-sm mb-5  "  value={"item-"+index}>
+                    <AccordionTrigger className='hover:no-underline w-full px-5 py-[25px]'>{faq.question}</AccordionTrigger>
+                    <AccordionContent className='px-5'>
                         {faq.answer}
                     </AccordionContent>
                 </AccordionItem>

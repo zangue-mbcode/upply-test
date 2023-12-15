@@ -56,7 +56,7 @@ const HeaderMobile = () => {
       ref={containerRef}
     >
       <motion.div
-        className={clsx("absolute inset-0 right-0 w-full border border-slate-200 bg-slate-200/50 p-4 py-6 shadow-lg shadow-black/5 dark:border-slate-700 dark:bg-black/70 dark:shadow-black/10 sm:inset-x-6" )}
+        className={clsx("absolute inset-0 right-0 w-full border border-slate-200 bg-white p-4 py-6 shadow-lg shadow-black/5 dark:border-slate-700 dark:bg-black dark:shadow-black/10 sm:inset-x-6" )}
         variants={sidebar}
       />
       <motion.ul
