@@ -20,6 +20,7 @@ import { Airplay, BookImage, BoomBox, Camera, CheckCircle2, Dribbble, Figma, Fil
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AnimatedDiv from "@/components/elements/AnimatedDiv";
 import ButtonWithArrow from "@/components/elements/ButtonWithArrow";
+import RoadMap from "@/components/elements/roadMap";
 
 export const HeaderCenteredItems = async () => {
     const [isHovered, setHovered] = useState(false)
@@ -37,28 +38,24 @@ export const HeaderCenteredItems = async () => {
 
   return (
     <div className="w-full ">
-        <div className="w-full pt-[250px] pb-[150px] backdrop-blur-lg backdrop-saturate-150 bg-background/70 flex justify-center">
+        <div className="w-full pt-[100px] md:pt-[250px] pb-[40px] md:pb-[150px] backdrop-blur-lg backdrop-saturate-150 bg-background/70 flex justify-center">
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
-                <h1 className="text-center text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">
+                <h1 className="text-center px-5 text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">
                     Your Next-Level &nbsp;
                     <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">
                     SaaS Website &nbsp;
                     </span>
                       is only one click away
                     </h1>
-                <p className="text-center paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-lg mt-8 lg:mt-12">
+                <p className="text-center px-5 paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-lg mt-8 lg:mt-12">
                     <span>The first ever</span> &nbsp;
                     <b>design and development subscription</b>&nbsp;
                     <span>for SaaS companies. Get</span>&nbsp;
                     <b>highly detailed designs and modern frontend development</b>&nbsp;
                     <span>without hiring an in-house team.</span>
                 </p>
-                <div className="flex justify-center gap-5">
-                    <motion.div
-                        onHoverStart={() => setHovered(true)}
-                        onHoverEnd={() => setHovered(false)}
-                    >
-                        <Button variant="default" className="rounded-full animate-btn">
+                <div className="flex flex-col md:flex-row justify-center px-5 gap-5 w-full">
+                <Button variant="default" className="rounded-full animate-btn ">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Get Started</span>
                             <svg height="10" viewBox="0 0 20 10" className="fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-black" fill="current" xmlns="http://www.w3.org/2000/svg">
@@ -82,13 +79,7 @@ export const HeaderCenteredItems = async () => {
                             </div>
                             
                         </Button>
-                        
-                    </motion.div>
-                    <motion.div
-                        onHoverStart={() => setHovered1(true)}
-                        onHoverEnd={() => setHovered1(false)}
-                    >
-                        <Button variant="outline" className="rounded-full animate-btn">
+                        <Button variant="outline" className="rounded-full animate-btn ">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Schedule a Call</span>
                             <svg height="10" viewBox="0 0 20 10" className="fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-white" fill="current" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +104,6 @@ export const HeaderCenteredItems = async () => {
                             </div>
                             
                         </Button>
-                    </motion.div>
                     
                 </div>
             </div>
@@ -386,9 +376,9 @@ export const HeaderCenteredItems = async () => {
 
         <section id="about" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
         <div className="absolute bottom-0 h-96 inset-x-0">
-                <div  style={{borderRadius:"50% 50%"}}  className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-1xl sm:blur-2xl transition-opacity duration-100 opacity-40 group-hover:opacity-50">
+                {/* <div  style={{borderRadius:"50% 50%"}}  className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-1xl sm:blur-2xl transition-opacity duration-100 opacity-40 group-hover:opacity-50">
 
-                </div>
+                </div> */}
                 <Image src={bgGrid} alt="" className="h-full w-auto mx-auto opacity-50 pointer-events-none" width="1920" height="1080"
                                 style={{color:"transparent"}}>
 
@@ -517,7 +507,15 @@ export const HeaderCenteredItems = async () => {
 
         <section id="process" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-            <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                    <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
+                        <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
+                        style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
+
+                        </div>
+                    </div>
+                    <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
+                
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
@@ -540,8 +538,17 @@ export const HeaderCenteredItems = async () => {
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
+                    </div>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                    <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
+                        <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
+                        style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
+
+                        </div>
+                    </div>
+                    <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
+                
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
@@ -564,8 +571,17 @@ export const HeaderCenteredItems = async () => {
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
+                    </div>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                    <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
+                        <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
+                        style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
+
+                        </div>
+                    </div>
+                    <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
+                
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
@@ -573,7 +589,7 @@ export const HeaderCenteredItems = async () => {
                                 <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
                                     <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
-                                    <Camera strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
+                                    <Camera  strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
                             
@@ -588,7 +604,10 @@ export const HeaderCenteredItems = async () => {
                     <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base max-w-md">
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
+                    </div>
                 </div>
+                
+                
             </div>
         </section>
 
@@ -600,7 +619,7 @@ export const HeaderCenteredItems = async () => {
                 </h2>
             </div>
 
-            <div className="lg:sticky" style={{top:"17rem",marginBottom:"12rem",marginTop:0}}>
+            <div className="sticky" style={{top:"17rem",marginBottom:"12rem",marginTop:0}}>
                 <div className="hidden lg:block absolute -top-16 h-32 w-full bg-gradient-to-t from-white via-white/80 dark:from-[#0E1117] dark:via-[#0E1117]">
 
                 </div>
@@ -656,7 +675,7 @@ export const HeaderCenteredItems = async () => {
                 </div>
             </div>
 
-            <div className="lg:sticky" style={{top:"17rem",marginBottom:"12rem",marginTop:0}}>
+            <div className="sticky" style={{top:"23rem",marginBottom:"6rem",marginTop:"-9rem"}}>
                 <div className="hidden lg:block absolute -top-16 h-32 w-full bg-gradient-to-t from-white via-white/80 dark:from-[#0E1117] dark:via-[#0E1117]">
 
                 </div>
@@ -713,7 +732,7 @@ export const HeaderCenteredItems = async () => {
             </div>
 
 
-            <div className="lg:sticky" style={{top:"17rem",marginBottom:"12rem",marginTop:0}}>
+            <div className="sticky" style={{top:"29rem",marginBottom:"0rem",marginTop:"-3rem"}}>
                 <div className="hidden lg:block absolute -top-16 h-32 w-full bg-gradient-to-t from-white via-white/80 dark:from-[#0E1117] dark:via-[#0E1117]">
 
                 </div>
@@ -1146,7 +1165,7 @@ export const HeaderCenteredItems = async () => {
 
 
 
-        <section id="pricing" className=" relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <section id="pricing" className="pb-10 relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="relative">
                 <div className="relative overflow-hidden w-full h-full p-px rounded-3xl lg:rounded-[2.5rem] bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
                     <div className="absolute w-1/2 h-32 -right-8 dark:right-auto dark:-left-8 -top-16 bg-indigo-500 dark:bg-white blur-3xl opacity-25"></div>
@@ -1305,19 +1324,106 @@ export const HeaderCenteredItems = async () => {
         </section>
 
 
-        <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-24 lg:pt-48 grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-16 pb-16 lg:pb-24">
-            <div>
-                <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
+        <div className="relative border-t border-slate-200 dark:border-slate-700">
+            <div className="absolute inset-x-0 top-0 h-96 overflow-hidden">
+                <div  style={{borderRadius:"50% 50%"}} className="mx-auto -mt-48 h-96 w-full max-w-screen-xl bg-[#F9FAFB] blur-3xl dark:bg-[#15191F] sm:blur-4xl">
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <section id="faq" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-10 lg:pt-15 flex flex-col justify-center gap-16 pb-16 lg:pb-24">
+            <div className="w-full flex flex-col justify-center items-center">
+                <h2 className="text-center text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
                 FAQs
                 </h2>
-                <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 max-w-lg">
+                <p className="paragraph text-center leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 w-full max-w-lg">
                 We always aim to be completely clear and transparent with our services. If there&apos;s anything left unclear, feel free to schedule a call with our founder Lukas.
                 </p>
-                <Button className="rounded-full">Schedule a Call</Button>
+                <Button className="rounded-full ">Schedule a Call</Button>
             </div>
             <div className="w-full">
                 <AnimatedDiv faqs={faqs} />
             </div>
+        </section>
+
+        <div className="relative border-t border-slate-200 dark:border-slate-700">
+            <div className="absolute inset-x-0 top-0 h-96 overflow-hidden">
+                <div  style={{borderRadius:"50% 50%"}} className="mx-auto -mt-48 h-96 w-full max-w-screen-xl bg-[#F9FAFB] blur-3xl dark:bg-[#15191F] sm:blur-4xl">
+
+                </div>
+            </div>
+        </div>
+
+        <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-10 lg:pt-15 flex flex-col justify-center gap-y-12 gap-x-16 pb-16 lg:pb-24">
+        <div className="w-full flex flex-col justify-center items-center">
+                <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
+                WORKING PROCESS
+                </h2>
+                <p className="paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-base my-7 max-w-lg">
+                We always aim to be completely clear and transparent with our services. If there&apos;s anything left unclear, feel free to schedule a call with our founder Lukas.
+                </p>
+                <Button className="rounded-full">Join a waitlist</Button>
+            </div>
+            <div className="ml-0 sticky">
+        <div className=" mx-auto w-full h-full">
+          <div className="relative wrap overflow-hidden py-10 h-full">
+            <div className="border-2-2 border-yellow-555 absolute h-full border"
+              style={{right:"50%", border: "2px solid #FFC100", borderRadius: "1%"}}></div>
+            <div className="border-2-2 border-yellow-555 absolute h-full border"
+              style={{left:"50%", border: "2px solid #FFC100", borderRadius: "1%"}}></div>
+            <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+              <div className="order-1 w-5/12"></div>
+              <div className="order-1 w-5/12 px-1 py-4 text-right">
+                <p className="mb-3 text-base text-yellow-300">1-6 May, 2021</p>
+                <h4 className="mb-3 font-bold text-md md:text-2xl">Registration</h4>
+                <p className="text-sm md:text-base leading-snug paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-opacity-100">
+                  Pick your favourite event(s) and register in that event by filling the form corresponding to that
+                  event. Its that easy 
+                </p>
+              </div>
+            </div>
+            <div className="mb-8 flex justify-between items-center w-full right-timeline">
+              <div className="order-1 w-5/12"></div>
+              <div className="order-1  w-5/12 px-1 py-4 text-left">
+                <p className="mb-3 text-base text-yellow-300">6-9 May, 2021</p>
+                <h4 className="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
+                <p className="text-sm md:text-base leading-snug paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-opacity-100">
+                  Participate online. The links for your registered events will be sent to you via email and whatsapp
+                  groups. Use those links and show your talent.
+                </p>
+              </div>
+            </div>
+            <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+              <div className="order-1 w-5/12"></div>
+              <div className="order-1 w-5/12 px-1 py-4 text-right">
+                <p className="mb-3 text-base text-yellow-300"> 10 May, 2021</p>
+                <h4 className="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
+                <p className="text-sm md:text-base leading-snug paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-opacity-100">
+                  The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the resukts will be
+                  announced on the whatsapp groups and will be mailed to you.
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-8 flex justify-between items-center w-full right-timeline">
+              <div className="order-1 w-5/12"></div>
+
+              <div className="order-1  w-5/12 px-1 py-4">
+                <p className="mb-3 text-base text-yellow-300">12 May, 2021</p>
+                <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left">Prize Distribution</h4>
+                <p className="text-sm md:text-base leading-snug paragraph leading-relaxed text-slate-600 dark:text-slate-300 text-opacity-100">
+                  The winners will be contacted by our team for their addresses and the winning goodies will be sent at
+                  their addresses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img className="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
+        </div>
+      </div>
         </section>
 
         <div className="relative border-t border-slate-200 dark:border-slate-700">

@@ -43,7 +43,7 @@ const AnimatedDiv = ({ faqs }: any) => {
         {faqs.map((faq: any, index: any) => (
             
             
-                <AccordionItem key={index} ref={faqRefs[index]} className="faq-item w-full border-dashed border-slate-950 dark:border-slate-600 border-2 rounded-sm mb-5  "  value={"item-"+index}>
+                <AccordionItem key={index} ref={faqRefs[index]} className="faq-item w-full  border-2 border-dashed border-slate-500 dark:border-slate-600 rounded-sm mb-5  "  value={"item-"+index}>
                     <AccordionTrigger className='hover:no-underline w-full px-5 py-[25px]'>{faq.question}</AccordionTrigger>
                     <AccordionContent className='px-5'>
                         {faq.answer}
