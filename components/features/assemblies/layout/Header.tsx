@@ -9,7 +9,7 @@ export const Header = async () => {
 
   return (
     
-    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-slate-100/60 shadow-lg shadow-black/5 backdrop-blur-lg  dark:bg-black/70 dark:shadow-black/10">
+    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-slate-100/60  backdrop-blur-lg  dark:bg-black/70 ">
       <div className="absolute inset-0 overflow-hidden rounded-full">
         <div style={{transform: "translateX(258.547px) translateZ(0px)"}} className="absolute -bottom-3 -left-10 h-6 w-20 rounded-full bg-white/70 opacity-0 blur-lg transition-opacity duration-200 group-hover:opacity-100 dark:bg-white/30">
 
@@ -21,22 +21,22 @@ export const Header = async () => {
           <div className=" hidden md:block">
           <ul className="relative flex items-center space-x-4 pl-4">
               <li className="relative cursor-pointer">
-                <Link href="#about" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                <Link href="#about" className="relative flex h-7 items-center rounded ml-[20px] text-[16px]  focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-[#666] hover:text-[#000] dark:text-slate-300 dark:hover:text-white ">
                 About
                 </Link>
               </li>
               <li className="relative cursor-pointer">
-                <Link href="#process" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                <Link href="#process" className="relative flex h-7 items-center rounded ml-[20px] text-[16px]  focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-[#666] hover:text-[#000] dark:text-slate-300 dark:hover:text-white">
                 Process
                 </Link>
               </li>
               <li className="relative cursor-pointer">
-                <Link href="#work" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                <Link href="#work" className="relative flex h-7 items-center rounded ml-[20px] text-[16px]  focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-[#666] hover:text-[#000] dark:text-slate-300 dark:hover:text-white">
                 Work
                 </Link>
               </li>
               <li className="relative cursor-pointer">
-                <Link href="#pricing" className="relative flex h-7 items-center rounded px-2 font-bold focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-slate-600 hover:text-black dark:text-slate-300 dark:hover:text-white">
+                <Link href="#pricing" className="relative flex h-7 items-center rounded ml-[20px] text-[16px]  focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-[#666] hover:text-[#000] dark:text-slate-300 dark:hover:text-white">
                 Pricing
                 </Link>
               </li>
@@ -47,10 +47,10 @@ export const Header = async () => {
         <div className="mr-5 flex flex-row gap-5">
         <div className=" hidden md:block">
           <div className="flex items-center space-x-4">
-            <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "rounded-full cursor-pointer" )}>
+            <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "cursor-pointer" )}>
               Login
             </Link>
-            <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "rounded-full cursor-pointer" )}>
+            <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "scursor-pointer" )}>
             Register
             </Link>
             

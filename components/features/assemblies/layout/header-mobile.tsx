@@ -90,12 +90,12 @@ const HeaderMobile = () => {
         </motion.li>
 
         <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center mt-10">
-        <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "w-full rounded-full cursor-pointer" )}>
+        <Link href="/" className={cn(buttonVariants({ variant: 'default' }), "w-full cursor-pointer" )}>
               Login
             </Link>
         </motion.li>
         <motion.li onClick={() => toggleOpen()} variants={MenuItemVariants} className="w-full flex justify-center">
-        <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "w-full rounded-full cursor-pointer" )}>
+        <Link href="/" className={cn(buttonVariants({ variant: 'outline' }), "w-full cursor-pointer" )}>
             Register
             </Link>
         </motion.li>
