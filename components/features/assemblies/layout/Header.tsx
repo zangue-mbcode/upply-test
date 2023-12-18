@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
+import logoWhite from "@/public/logo-dark.svg";
 
 
 export const Header = async () => {
@@ -19,8 +20,11 @@ export const Header = async () => {
       </div>
       <div className="container flex items-center justify-between py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
         <div className="flex flex-row gap-10">
-              <Link href="/" className="relative flex h-7 items-center rounded ml-[20px] text-[16px]  focus:bg-white/30 focus:outline-none dark:focus:bg-white/10 text-[#666] hover:text-[#000] dark:text-slate-300 dark:hover:text-white ">
+              <Link href="/" className="relative flex h-7 items-center rounded ml-[20px]  dark:hidden ">
                 <Image src={logo} alt="Logo"/>
+                </Link>
+                <Link href="/" className="relative flex h-7 items-center rounded ml-[20px]  hidden dark:block">
+                <Image src={logoWhite} alt="Logo"/>
                 </Link>
           <div className=" hidden md:block">
           <ul className="relative flex items-center space-x-4 pl-4">
