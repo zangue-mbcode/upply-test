@@ -68,7 +68,7 @@ export const HeaderCenteredItems = async () => {
                 <Button variant="default" className="animate-btn w-[150px]">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Get Started</span>
-                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-black" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-white dark:text-black" fill="current" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     fill-rule="evenodd" 
                                     clip-rule="evenodd" 
@@ -92,7 +92,7 @@ export const HeaderCenteredItems = async () => {
                         <Button variant="outline" className="animate-btn w-[150px] ">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Schedule a Call</span>
-                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-white" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-black dark:text-white" fill="current" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     fill-rule="evenodd" 
                                     clip-rule="evenodd" 
