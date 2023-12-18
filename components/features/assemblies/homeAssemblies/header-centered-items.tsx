@@ -40,7 +40,7 @@ export const HeaderCenteredItems = async () => {
     <div className="w-full ">
         <div className="w-full pt-[100px] md:pt-[250px] pb-[40px] md:pb-[150px] backdrop-blur-lg backdrop-saturate-150 bg-background/70 flex justify-center">
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
-                <h1 className="text-center px-5 text-black dark:text-white font-display font-extrabold leading-tight text-3xl sm:text-4xl lg:text-5xl dark:drop-shadow-lg">
+                <h1 className="text-center px-5 text-black dark:text-white font-display font-extrabold leading-tight scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl dark:drop-shadow-lg">
                     Your Next-Level &nbsp;
                     <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">
                     SaaS Website &nbsp;
@@ -385,15 +385,15 @@ export const HeaderCenteredItems = async () => {
                 </Image>
             </div>
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
               
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
-                                <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-300 blur-md opacity-50"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
+                                <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-white-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
                                     <Airplay strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
@@ -410,14 +410,14 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
+                        <div className="relative group w-14 h-14 border rounded-2xl">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
                                     <BoomBox strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
@@ -434,14 +434,14 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="border  p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
+                        <div className="relative group w-14 h-14 border rounded-2xl">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-md dark:opacity-80"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-indigo-200 blur-md dark:opacity-50"></div>
                                     <RadioTower strokeWidth="1" className="h-7 w-7 text-indigo-500 dark:text-indigo-400"/>
                                 </div>
                             </div>
@@ -466,7 +466,7 @@ export const HeaderCenteredItems = async () => {
         <div className="overflow-x-hidden ">
             <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  group pt-24 lg:pt-48 grid grid-cols-1 gap-y-24 md:grid-cols-2">
                 <div className="md:pr-4 md:pb-8">
-                    <h2 className="text-black dark:text-white font-display font-extrabold leading-tight text-2xl lg:text-3xl dark:drop-shadow-md undefined">
+                    <h2 className="text-black dark:text-white scroll-m-20 border-b pb-2 text-4xl lg:5xl font-semibold tracking-tight first:mt-0 dark:drop-shadow-md">
                         <span>
                         <span className="from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent bg-gradient-to-b">Focus</span>  on your product – <br />let us handle your website
                         </span>
@@ -515,12 +515,12 @@ export const HeaderCenteredItems = async () => {
                     <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
                 
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-100 to-white-200 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                     <Film  strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
@@ -548,12 +548,12 @@ export const HeaderCenteredItems = async () => {
                     <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
                 
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-100 to-white-200 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                     <BookImage strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
@@ -581,12 +581,12 @@ export const HeaderCenteredItems = async () => {
                     <div className="relative w-full rounded-xl bg-[#F9FAFB] dark:bg-[#101318] h-full group relative p-4 flex flex-col justify-between items-start">
                 
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-emerald-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-100 to-white-200 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-emerald-200 blur-md dark:opacity-40"></div>
                                     <Camera  strokeWidth="1" className="h-7 w-7 text-emerald-500 dark:text-emerald-400"/>
                                 </div>
                             </div>
@@ -802,14 +802,14 @@ export const HeaderCenteredItems = async () => {
             </p>
 
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-            <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+            <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                     <Globe2 strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
@@ -826,14 +826,14 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                     <GraduationCap strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
@@ -850,14 +850,14 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="shadow-xl p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8]">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 border rounded-2xl">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-amber-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-amber-200 blur-md dark:opacity-40"></div>
                                     <Radar strokeWidth="1" className="h-7 w-7 text-amber-500 dark:text-amber-400"/>
                                 </div>
                             </div>
@@ -1079,12 +1079,12 @@ export const HeaderCenteredItems = async () => {
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
                 <div  className="">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 rounded-2xl border">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-40"></div>
                                     <Dribbble strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
@@ -1103,12 +1103,12 @@ export const HeaderCenteredItems = async () => {
                 </div>
                 <div  className="">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 rounded-2xl border">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-200 blur-md opacity-40"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-40"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-40"></div>
                                     <Figma strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
@@ -1127,12 +1127,12 @@ export const HeaderCenteredItems = async () => {
                 </div>
                 <div  className="">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
-                        <div className="relative group w-14 h-14">
-                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-400 blur-md opacity-50"></div>
-                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-slate-200 to-slate-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
-                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-md dark:opacity-80"></div>
+                        <div className="relative group w-14 h-14 rounded-2xl border">
+                            <div className="absolute inset-x-5 h-2 bottom-0 bg-rose-200 blur-md opacity-50"></div>
+                            <div className="relative overflow-hidden h-14 w-14 rounded-2xl p-px bg-gradient-to-b from-white-200 to-white-300 dark:from-slate-700 dark:to-[#171C23] shadow-lg shadow-black/5">
+                                <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-80"></div>
                                 <div className="relative h-full w-full rounded-[15px] bg-gradient-radial from-white to-slate-100 dark:from-[#393C45] dark:to-[#171C23] flex justify-center items-center">
-                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-400 blur-lg dark:opacity-80"></div>
+                                    <div className="absolute inset-x-4 h-4 -bottom-2 bg-rose-200 blur-md dark:opacity-80"></div>
                                     <Framer strokeWidth="1" className="h-7 w-7 text-rose-500 dark:text-rose-400"/>
                                 </div>
                             </div>
@@ -1368,10 +1368,10 @@ export const HeaderCenteredItems = async () => {
             <div className="ml-0 sticky">
         <div className=" mx-auto w-full h-full">
           <div className="relative wrap overflow-hidden py-10 h-full">
-            <div className="border-2-2 border-yellow-555 absolute h-full border"
-              style={{right:"50%", border: "2px solid #FFC100", borderRadius: "1%"}}></div>
-            <div className="border-2-2 border-yellow-555 absolute h-full border"
-              style={{left:"50%", border: "2px solid #FFC100", borderRadius: "1%"}}></div>
+            <div className="animate-border border-2-2 absolute rounded-[1%] right-[50%] h-full border-2  inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500  bg-gradient-to-r"
+              ></div>
+            <div className="animate-border border-2-2 absolute rounded-[1%]  left-[50%] h-full border-2 inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500 bg-gradient-to-r"
+             ></div>
             <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div className="order-1 w-5/12"></div>
               <div className="order-1 w-5/12 px-1 py-4 text-right">
