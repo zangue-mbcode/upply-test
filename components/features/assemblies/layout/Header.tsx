@@ -20,10 +20,10 @@ export const Header = async () => {
       </div>
       <div className="container flex items-center justify-between py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
         <div className="flex flex-row gap-10">
-              <Link href="/" className="relative flex h-7 items-center rounded ml-[20px]  dark:hidden ">
+              <Link href="/" className="relative flex h-7 items-center rounded  dark:hidden ">
                 <Image src={logo} alt="Logo"/>
                 </Link>
-                <Link href="/" className="relative flex h-7 items-center rounded ml-[20px]  hidden dark:block">
+                <Link href="/" className="relative flex h-7 items-center rounded  hidden dark:block">
                 <Image src={logoWhite} alt="Logo"/>
                 </Link>
           <div className=" hidden md:block">
