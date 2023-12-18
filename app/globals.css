@@ -103,6 +103,7 @@
   animation: fadeIn 1s ease-in-out;
 } */
 
+
 /* styles.css */
 @keyframes fadeIn {
   from {
@@ -113,6 +114,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.road-map-item {
+  animation: fadeIn 0.5s ease-out;
+  margin-bottom: 20px; /* Ajoutez une marge entre chaque élément pour un meilleur espacement */
 }
 
 .faq-item {
@@ -152,6 +158,9 @@
 }
 
 .animate-btn{
+  .btn-svg {
+    display: none;
+  }
   .pathOne{
     transform: scaleX(0);
      transform-origin: 10px 5px;
@@ -160,9 +169,13 @@
   .pathTwo{
     transform: translateX(-7px);
     transform-origin: 16.5001px 4.99993px;
+    opacity: 0;
   }
 }
 .animate-btn:hover{
+  .btn-svg {
+  display: block;
+}
   .pathOne{
     transform: none;
      transform-origin: 10px 5px;
@@ -171,6 +184,7 @@
   .pathTwo{
     transform: none;
     transform-origin: 16.5001px 4.99993px;
+    opacity: 1;
   }
 }
 

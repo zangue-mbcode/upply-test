@@ -35,6 +35,16 @@ export const HeaderCenteredItems = async () => {
         { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
         { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
       ];
+      const roads = [
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+        { question: 'Qu\'est-ce que Next.js ?', answer: 'Next.js est un framework React.' },
+        { question: 'Comment démarrer avec Next.js ?', answer: 'Installez Next.js et commencez à coder.' },
+      ];
 
   return (
     <div className="w-full ">
@@ -55,10 +65,10 @@ export const HeaderCenteredItems = async () => {
                     <span>without hiring an in-house team.</span>
                 </p>
                 <div className="flex flex-col md:flex-row justify-center px-5 gap-5 w-full">
-                <Button variant="default" className="animate-btn ">
+                <Button variant="default" className="animate-btn w-[150px]">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Get Started</span>
-                            <svg height="10" viewBox="0 0 20 10" className="fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-black" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-black" fill="current" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     fill-rule="evenodd" 
                                     clip-rule="evenodd" 
@@ -79,10 +89,10 @@ export const HeaderCenteredItems = async () => {
                             </div>
                             
                         </Button>
-                        <Button variant="outline" className="animate-btn ">
+                        <Button variant="outline" className="animate-btn w-[150px] ">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Schedule a Call</span>
-                            <svg height="10" viewBox="0 0 20 10" className="fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-white" fill="current" xmlns="http://www.w3.org/2000/svg">
+                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-current opacity-50 dark:drop-shadow text-slate-600 dark:text-white" fill="current" xmlns="http://www.w3.org/2000/svg">
                                 <path 
                                     fill-rule="evenodd" 
                                     clip-rule="evenodd" 
@@ -385,7 +395,7 @@ export const HeaderCenteredItems = async () => {
                 </Image>
             </div>
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-md ">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-sm ">
               
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14 border rounded-2xl">
@@ -410,7 +420,7 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-md ">
+                <div  className="border p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-sm ">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14 border rounded-2xl">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
@@ -434,7 +444,7 @@ export const HeaderCenteredItems = async () => {
                     When your product evolves, it can be hard to keep your website up-to-date whilst maintaining highest design standards.
                     </p>
                 </div>
-                <div  className="border  p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-md ">
+                <div  className="border  p-4 rounded-xl flex flex-col relative overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none bg-white-100 dark:bg-default-400/10 backdrop-blur-sm ">
                     <div className="mb-4 flex flex-col gap-6 sm:flex-row sm:items-center lg:flex-col lg:items-start xl:flex-row">
                         <div className="relative group w-14 h-14 border rounded-2xl">
                             <div className="absolute inset-x-5 h-2 bottom-0 bg-indigo-400 blur-md opacity-50"></div>
@@ -505,7 +515,7 @@ export const HeaderCenteredItems = async () => {
 
         <section id="process" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
             <div className="grid grid-cols-1 gap-12 lg:gap-x-16 md:grid-cols-2 lg:grid-cols-3">
-                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                <div  className="relative p-px flex flex-col border  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-white-200 to-white-100 dark:from-[#393C45] dark:to-[#1A1D24]">
                     <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
                         <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
                         style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
@@ -538,7 +548,7 @@ export const HeaderCenteredItems = async () => {
                     </p>
                     </div>
                 </div>
-                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                <div  className="relative p-px flex flex-col border  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-white-200 to-white-100 dark:from-[#393C45] dark:to-[#1A1D24]">
                     <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
                         <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
                         style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
@@ -571,7 +581,7 @@ export const HeaderCenteredItems = async () => {
                     </p>
                     </div>
                 </div>
-                <div  className="relative p-px flex flex-col  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-slate-200 to-slate-100 dark:from-[#393C45] dark:to-[#1A1D24]">
+                <div  className="relative p-px flex flex-col border  overflow-hidden w-full height-auto rounded-xl bg-gradient-to-b from-white-200 to-white-100 dark:from-[#393C45] dark:to-[#1A1D24]">
                     <div className="absolute inset-0 border border-red-500 animate-spin-slow blur-md">
                         <div className="absolute h-1/2 w-1/2 -right-1/4 bottom-0 bg-emerald-500 dark:bg-emerald-400"
                         style={{borderRadius:"50% 50%",transform:"translate3d(0, 0, 0)"}}>
@@ -1368,11 +1378,11 @@ export const HeaderCenteredItems = async () => {
             <div className="ml-0 sticky">
         <div className=" mx-auto w-full h-full">
           <div className="relative wrap overflow-hidden py-10 h-full">
-            <div className="animate-border border-2-2 absolute rounded-[1%] right-[50%] h-full border-2  inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500  bg-gradient-to-r"
+            <div className="animate border-2-2 absolute rounded-[1%] right-[50%] h-full border-2  inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500  bg-gradient-to-r"
               ></div>
-            <div className="animate-border border-2-2 absolute rounded-[1%]  left-[50%] h-full border-2 inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500 bg-gradient-to-r"
+            <div className="animate border-2-2 absolute rounded-[1%]  left-[50%] h-full border-2 inline-block border-pink-500 from-pink-500 via-red-500 to-yellow-500 bg-gradient-to-r"
              ></div>
-            <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            {/* <div className="road-map-item mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div className="order-1 w-5/12"></div>
               <div className="order-1 w-5/12 px-1 py-4 text-right">
                 <p className="mb-3 text-base text-yellow-300">1-6 May, 2021</p>
@@ -1383,7 +1393,7 @@ export const HeaderCenteredItems = async () => {
                 </p>
               </div>
             </div>
-            <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="road-map-item mb-8 flex justify-between items-center w-full right-timeline">
               <div className="order-1 w-5/12"></div>
               <div className="order-1  w-5/12 px-1 py-4 text-left">
                 <p className="mb-3 text-base text-yellow-300">6-9 May, 2021</p>
@@ -1394,7 +1404,7 @@ export const HeaderCenteredItems = async () => {
                 </p>
               </div>
             </div>
-            <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+            <div className="road-map-item mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
               <div className="order-1 w-5/12"></div>
               <div className="order-1 w-5/12 px-1 py-4 text-right">
                 <p className="mb-3 text-base text-yellow-300"> 10 May, 2021</p>
@@ -1406,7 +1416,7 @@ export const HeaderCenteredItems = async () => {
               </div>
             </div>
 
-            <div className="mb-8 flex justify-between items-center w-full right-timeline">
+            <div className="road-map-item mb-8 flex justify-between items-center w-full right-timeline">
               <div className="order-1 w-5/12"></div>
 
               <div className="order-1  w-5/12 px-1 py-4">
@@ -1417,7 +1427,8 @@ export const HeaderCenteredItems = async () => {
                   their addresses.
                 </p>
               </div>
-            </div>
+            </div> */}
+            <RoadMap roads={roads} />
           </div>
           <img className="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
         </div>

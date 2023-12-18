@@ -9,9 +9,9 @@ export const Header = async () => {
 
   return (
     
-    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-white-300/90  backdrop-blur-md  dark:bg-black/70 ">
+    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-white-900  backdrop-blur-2xl  dark:bg-black/70 ">
       <div className="absolute inset-0 overflow-hidden rounded-full">
-        <div style={{transform: "translateX(258.547px) translateZ(0px)"}} className="absolute -bottom-3 -left-10 h-6 w-20 rounded-full bg-white/70 opacity-0 blur-lg transition-opacity duration-200 group-hover:opacity-100 dark:bg-white/30">
+        <div style={{transform: "translateX(258.547px) translateZ(0px)"}} className="absolute -bottom-3 -left-10 h-6 w-20 rounded-full bg-white-400 opacity-0 blur-md transition-opacity duration-200 group-hover:opacity-100 dark:bg-white-500">
 
         </div>
       </div>

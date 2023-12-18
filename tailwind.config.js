@@ -69,16 +69,14 @@ module.exports = {
           '100%, 0%': { transform: 'translate()' },
         },
         border: {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
+          'to': { transform: 'translateY(100%)' },
+          'from': { transform: 'translateY(0)' },
         },
       },
       animation: {
-        border: 'border 4s ease infinite',
+        "border": '4s border 0s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      animation: {
         'linear': 'wiggle 30s linear infinite',
       },
     },
