@@ -50,7 +50,7 @@ export const HeaderCenteredItems = async () => {
 
   return (
     <div className="w-full ">
-        <div className="absolute inset-0 pointer-events-none  overflow-hidden z-0">
+        <div className="absolute inset-0 pointer-events-none  overflow-hidden">
         <div className="absolute top-0 h-screen -left-32 -right-8 sm:inset-x-0">
         <Image src={hello1} alt="" className="w-full h-auto opacity-50 dark:hidden" width="2000" height="1160"
                           style={{color:"transparent"}}    >
@@ -62,7 +62,7 @@ export const HeaderCenteredItems = async () => {
                 </Image>
         </div>
         </div>
-        <section className="w-full pt-[100px]  md:pt-[250px] pb-[40px]  md:pb-[150px]  flex justify-center z-1">
+        <section className="w-full pt-[100px]  md:pt-[250px] pb-[40px]  md:pb-[150px] bg-white-100 dark:bg-default-400/10 backdrop-blur-sm   flex justify-center z-1">
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
                 <h1 className="text-center px-5 text-black dark:text-white font-display font-extrabold leading-tight scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl dark:drop-shadow-lg">
                     Your Next-Level &nbsp;
