@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full relative overflow-x-hidden">
       <div className='z-40'>
         <Header />
         <HeaderMobile />

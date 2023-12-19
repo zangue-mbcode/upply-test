@@ -12,13 +12,13 @@ export const Header = async () => {
 
   return (
     
-    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-white-900  backdrop-blur-2xl  dark:bg-black/70 ">
+    <header className="border-b border-b-accent fixed top-0 left-0 right-0 bg-white/70  backdrop-blur-2xl  dark:bg-black/70 ">
       <div className="absolute inset-0 overflow-hidden rounded-full">
         <div style={{transform: "translateX(258.547px) translateZ(0px)"}} className="absolute -bottom-3 -left-10 h-6 w-20 rounded-full bg-white-400 opacity-0 blur-md transition-opacity duration-200 group-hover:opacity-100 dark:bg-white-500">
 
         </div>
       </div>
-      <div className="container flex items-center justify-between py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
+      <div className=" flex items-center justify-between py-3 w-full px-6 sm:px-8 lg:px-12  max-w-screen-xl m-auto gap-1">
         <div className="flex flex-row gap-10">
               <Link href="/" className="relative flex h-7 items-center rounded  dark:hidden ">
                 <Image src={logo} alt="Logo"/>

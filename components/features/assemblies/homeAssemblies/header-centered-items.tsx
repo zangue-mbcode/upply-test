@@ -10,13 +10,15 @@ import brandWhite from "@/public/contentlayer-white.svg"
 import aboutDark from "@/public/urlbox-contentlayer-dark.webp"
 import aboutWhite from "@/public/urlbox-contentlayer-light.webp"
 import bgGrid from "@/public/background-grid.webp"
+import hello2 from "@/public/hellodark.webp"
+import hello1 from "@/public/hello-bg1.webp"
 import requestBg from "@/public/request-background.webp"
 import requestCard from "@/public/request-card.webp"
 import effectDark from "@/public/effect-dark.webp"
 import effectLight from "@/public/effect-light.webp"
 import clearystDark from "@/public/clearyst-dark.webp"
 import clearystLight from "@/public/clearyst-light.webp"
-import { Airplay, BookImage, BoomBox, Camera, CheckCircle2, Dribbble, Figma, Film, Framer, Globe2, GraduationCap, Radar, RadioTower, Star } from "lucide-react";
+import { Airplay, ArrowRight, BookImage, BoomBox, Camera, CheckCircle2, Dribbble, Figma, Film, Framer, Globe2, GraduationCap, Radar, RadioTower, Star } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AnimatedDiv from "@/components/elements/AnimatedDiv";
 import ButtonWithArrow from "@/components/elements/ButtonWithArrow";
@@ -48,7 +50,19 @@ export const HeaderCenteredItems = async () => {
 
   return (
     <div className="w-full ">
-        <div className="w-full pt-[100px] md:pt-[250px] pb-[40px] md:pb-[150px] backdrop-blur-lg backdrop-saturate-150 bg-background/70 flex justify-center">
+        <div className="absolute inset-0 pointer-events-none  overflow-hidden z-0">
+        <div className="absolute top-0 h-screen -left-32 -right-8 sm:inset-x-0">
+        <Image src={hello1} alt="" className="w-full h-auto opacity-50 dark:hidden" width="2000" height="1160"
+                          style={{color:"transparent"}}    >
+
+                </Image>
+                <Image src={hello2} alt="" className="w-full h-auto opacity-50 hidden dark:block"  width="2000" height="1160"
+                          style={{color:"transparent"}}    >
+
+                </Image>
+        </div>
+        </div>
+        <section className="w-full pt-[100px]  md:pt-[250px] pb-[40px]  md:pb-[150px]  flex justify-center z-1">
             <div className="w-full flex flex-col justify-center max-w-[800px] gap-[25px]">
                 <h1 className="text-center px-5 text-black dark:text-white font-display font-extrabold leading-tight scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl dark:drop-shadow-lg">
                     Your Next-Level &nbsp;
@@ -68,56 +82,48 @@ export const HeaderCenteredItems = async () => {
                 <Button variant="default" className="animate-btn w-[150px]">
                             <div className="flex h-full items-center space-x-2 ">
                             <span>Get Started</span>
-                            <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-white dark:fill-black opacity-50 dark:drop-shadow text-white dark:text-black" fill="fill-white dark:fill-black" xmlns="http://www.w3.org/2000/svg">
+                            <ArrowRight strokeWidth="1.2" className="btn-svg text-white dark:text-black w-8" />
+                            {/* <svg height="10" viewBox="0 0 20 10" className="btn-svg stroke-cyan dark:stroke-black  fill-white dark:fill-black opacity-50 dark:drop-shadow text-white dark:text-black"  xmlns="http://www.w3.org/2000/svg">
                                 <path 
-                                    fill-rule="evenodd" 
-                                    clip-rule="evenodd" 
                                     d="M0.5 5C0.5 4.44772 0.947715 4 1.5 4L18.5 4C19.0523 4 19.5 4.44772 19.5 5C19.5 5.55229 19.0523 6 18.5 6L1.5 6C0.947715 6 0.5 5.55228 0.5 5Z"
-                                    fill="fill-white dark:fill-black"
-                                    className="pathOne fill-white dark:fill-black"
+                                    // fill="#ffffff" 
+                                    // className="fill-white"
                                 >
                                 </path>
                                 <path 
-                                    fill-rule="evenodd" 
-                                    clip-rule="evenodd" 
                                     d="M15.2071 0.292893C14.8166 -0.0976311 14.1834 -0.0976311 13.7929 0.292893C13.4024 0.683418 13.4024 1.31658 13.7929 1.70711L17.0858 5L13.793 8.29274C13.4025 8.68327 13.4025 9.31643 13.793 9.70696C14.1836 10.0975 14.8167 10.0975 15.2073 9.70696L19.2071 5.70711L19.2073 5.70696C19.5978 5.31643 19.5978 4.68327 19.2073 4.29274C19.2023 4.28781 19.1974 4.28294 19.1924 4.27814L15.2071 0.292893Z"
-                                    fill="fill-white dark:fill-black"
-                                    className="pathTwo fill-white dark:fill-black"
+                                    // fill="#ffffff" 
+                                    // className="fill-white"
                                 >
                                 </path>
-                            </svg>
+                            </svg> */}
                             </div>
                             
                         </Button>
                         <Button variant="outline" className="animate-btn w-[150px] ">
                             <div className="flex h-full items-center space-x-2 ">
                                 <span>Schedule a Call</span>
-                                <svg height="10" viewBox="0 0 20 10" className="btn-svg fill-white dark:fill-black opacity-50 dark:drop-shadow text-black dark:text-white" fill="fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg">
+                            <ArrowRight strokeWidth="1.2" className="btn-svg text-accent-foreground dark:text-white w-8" />
+                                {/* <svg height="10" viewBox="0 0 20 10" className="btn-svg  fill-cyan dark:fill-white stroke-cyan dark:stroke-white opacity-50 dark:drop-shadow text-black dark:text-white"  xmlns="http://www.w3.org/2000/svg">
                                     <path 
-                                        fill-rule="evenodd" 
-                                        clip-rule="evenodd" 
                                         d="M0.5 5C0.5 4.44772 0.947715 4 1.5 4L18.5 4C19.0523 4 19.5 4.44772 19.5 5C19.5 5.55229 19.0523 6 18.5 6L1.5 6C0.947715 6 0.5 5.55228 0.5 5Z"
-                                        fill="fill-black dark:fill-white"
-                                        className="pathOne fill-black dark:fill-white"
+                                        
                                     >
                                     
                                     </path>
                                     <path 
-                                        fill-rule="evenodd" 
-                                        clip-rule="evenodd" 
                                         d="M15.2071 0.292893C14.8166 -0.0976311 14.1834 -0.0976311 13.7929 0.292893C13.4024 0.683418 13.4024 1.31658 13.7929 1.70711L17.0858 5L13.793 8.29274C13.4025 8.68327 13.4025 9.31643 13.793 9.70696C14.1836 10.0975 14.8167 10.0975 15.2073 9.70696L19.2071 5.70711L19.2073 5.70696C19.5978 5.31643 19.5978 4.68327 19.2073 4.29274C19.2023 4.28781 19.1974 4.28294 19.1924 4.27814L15.2071 0.292893Z"
-                                        fill="fill-black dark:fill-white"
-                                        className="pathTwo fill-black dark:fill-white"
+                                        
                                     >
                                     </path>
-                                </svg>
+                                </svg> */}
                             </div>
                             
                         </Button>
                     
                 </div>
             </div>
-        </div>
+        </section>
 
         <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pb-12 lg:pb-16 mt-10 ">
             <div className="relative overflow-x-hidden lg:-mx-16">
@@ -385,8 +391,8 @@ export const HeaderCenteredItems = async () => {
 
 
         <section id="about" className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  pt-16 lg:pt-24 ">
-        <div className="absolute bottom-0 h-96 inset-x-0">
-                {/* <div  style={{borderRadius:"50% 50%"}}  className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-1xl sm:blur-2xl transition-opacity duration-100 opacity-40 group-hover:opacity-50">
+        <div className="absolute bottom-0 h-96 inset-x-0 select-none">
+                {/* <div  style={{borderRadius:"50% 50%"}}  className="select-none absolute bottom-12 left-1/2 -translate-x-1/2  w-1/2 h-32 blur-1xl sm:blur-2xl transition-opacity duration-100 opacity-40 group-hover:opacity-50">
 
                 </div> */}
                 <Image src={bgGrid} alt="" className="h-full w-auto mx-auto opacity-50 pointer-events-none" width="1920" height="1080"
@@ -489,8 +495,8 @@ export const HeaderCenteredItems = async () => {
                     </p>
                 </div>
                 <div className="relative flex flex-col justify-end">
-                    <div className="absolute -inset-x-24 bottom-0 overflow-hidden">
-                        <div style={{borderRadius:"50% 50%"}} className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-3/4 h-1/2 blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-80">
+                    <div className="absolute -inset-x-24 bottom-0 overflow-hidden select-none ">
+                        <div style={{borderRadius:"50% 50%"}} className="select-none  absolute -bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-3/4 h-1/2 blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-80">
 
                         </div>
                         <Image src={bgGrid} alt="" className="w-full opacity-50 text-transparent" width="1920" height="1080">
@@ -654,8 +660,8 @@ export const HeaderCenteredItems = async () => {
                             </p>
                         </div>
                         <div className="hidden sm:block relative overflow-hidden">
-                            <div className="absolute h-2/3 left-0 bottom-0 -right-64">
-                            <Image src={bgGrid} alt="" className="object-cover object-left-top opacity-50" width="1920" height="1080"
+                            <div className="absolute h-2/3 left-0 bottom-0 -right-64 select-none ">
+                            <Image src={bgGrid} alt="" className="select-none object-cover object-left-top opacity-50" width="1920" height="1080"
                             style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,color:"transparent"}}>
 
                                 </Image>
@@ -710,8 +716,8 @@ export const HeaderCenteredItems = async () => {
                             </p>
                         </div>
                         <div className="hidden sm:block relative overflow-hidden">
-                            <div className="absolute h-2/3 left-0 bottom-0 -right-64">
-                            <Image src={bgGrid} alt="" className="object-cover object-left-top opacity-50" width="1920" height="1080"
+                            <div className="absolute h-2/3 left-0 bottom-0 -right-64 select-none ">
+                            <Image src={bgGrid} alt="" className="select-none object-cover object-left-top opacity-50" width="1920" height="1080"
                             style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,color:"transparent"}}>
 
                                 </Image>
@@ -767,8 +773,8 @@ export const HeaderCenteredItems = async () => {
                             </p>
                         </div>
                         <div className="hidden sm:block relative overflow-hidden">
-                            <div className="absolute h-2/3 left-0 bottom-0 -right-64">
-                            <Image src={bgGrid} alt="" className="object-cover object-left-top opacity-50" width="1920" height="1080"
+                            <div className="absolute h-2/3 left-0 bottom-0 -right-64 select-none ">
+                            <Image src={bgGrid} alt="" className="select-none object-cover object-left-top opacity-50" width="1920" height="1080"
                             style={{position:"absolute",height:"100%",width:"100%",left:0,top:0,right:0,bottom:0,color:"transparent"}}>
 
                                 </Image>
@@ -986,8 +992,8 @@ export const HeaderCenteredItems = async () => {
 
 
         <section className="relative mx-auto w-full max-w-screen-xl px-6 sm:px-8 lg:px-12  relative group pt-24 lg:pt-48 grid grid-cols-1 gap-y-16 md:grid-cols-3 items-end">
-            <div className="absolute bottom-0 h-96 inset-x-0">
-                <div  style={{borderRadius:"50% 50%"}}  className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-3xl sm:blur-4xl transition-opacity duration-500 opacity-70 group-hover:opacity-90">
+            <div className="absolute bottom-0 h-96 inset-x-0 select-none ">
+                <div  style={{borderRadius:"50% 50%"}}  className="select-none absolute -bottom-12 left-1/2 -translate-x-1/2 bg-indigo-400 w-1/2 h-32 blur-3xl sm:blur-4xl transition-opacity duration-500 opacity-70 group-hover:opacity-90">
 
                 </div>
                 <Image src={bgGrid} alt="" className="h-full w-auto mx-auto opacity-50 pointer-events-none" width="1920" height="1080"
